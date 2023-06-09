@@ -1,0 +1,192 @@
+/* fonts and colours */
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #8db38b;
+  --secondary1-color: #bdbea9;
+  --secondary2-color: #04724d;
+  --accent1-color: #d2ab99;
+  --accent2-color: #56876d;
+
+  --heading-font: Montserrat, Times, serif;
+  --paragraph-font: Verdana, Helvetica, sans-serif;
+
+  --headline-color-on-white: black; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: black; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --text-background-color: #56876d;
+  --nav-link-color: #d2ab99;
+  --nav-background-color: #04724d;
+  --nav-hover-link-color: #04724d;
+  --nav-hover-background-color: #d2ab99;
+}
+
+/* General settings */
+
+html {
+  background-color: var(--primary-color);
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--text-background-color);
+}
+header > h1,
+header > h2 {
+  color: var(--headline-color-on-color);
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color);
+  padding: 1em;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td {
+  width: 20%;
+  height: 3em;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary1 {
+  background-color: var(--secondary1-color);
+}
+.secondary2 {
+  background-color: var(--secondary2-color);
+}
+.accent1 {
+  background-color: var(--accent1-color);
+}
+.accent2 {
+  background-color: var(--accent2-color);
+}
+
+p.colored {
+  background-color: var(--text-background-color);
+  color: var(--paragraph-color-on-color);
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  padding: 1em;
+  min-width: 70px;
+}
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(8, 10%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas:
+    ". . . home home . . ."
+    ". . . . top . . ."
+    ". left left left center right right ."
+    "page2 page2 . page3 page3 . page4 page4";
+}
+.sitemap > div {
+  text-align: center;
+}
+.sm-home {
+  grid-area: home;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page2 {
+  grid-area: page2;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page3 {
+  grid-area: page3;
+  background-color: #999;
+  line-height: 3em;
+}
+.sm-page4 {
+  grid-area: page4;
+  background-color: #999;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.center {
+  grid-area: center;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.larger-view {
+  display: block;
+  width: 30vw;
+  height: 90vh;
+  justify-content: center;
+}
