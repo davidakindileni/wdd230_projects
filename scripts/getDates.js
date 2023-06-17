@@ -1,3 +1,10 @@
+// Set the year for copyright
+document.getElementById("currentyear").innerHTML = new Date().getFullYear();
+
+// Set the date when last updated
+let a = document.lastModified;
+document.getElementById("lastmodified").innerHTML = a;
+
 // Dark Mode script
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
@@ -13,10 +20,3 @@ modeButton.addEventListener("click", () => {
     modeButton.textContent = "☑️";
   }
 });
-
-// Set the year for copyright
-document.getElementById("currentyear").innerHTML = new Date().getFullYear();
-
-// Set the date when last updated
-let a = document.lastModified;
-document.getElementById("lastmodified").innerHTML = a;
