@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 420px;
+  place-items: center;
+}
+
+body {
+  /* font-family: "Montserrat", sans-serif; */
+  background-color: #f3eded;
+  margin: 0 1.5rem;
+}
