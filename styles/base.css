@@ -18,6 +18,7 @@ body {
   border-radius: 5px;
   width: 90px;
   height: 90px;
+  margin-right: 20px;
 }
 
 header {
@@ -26,16 +27,17 @@ header {
   padding: 1rem;
   background-color: #09814a;
   color: #fff;
-  font-size: 14px;
-  text-align: center;
+  font-size: 12px;
+  text-align: Left;
 }
 
 #mode {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 3rem;
+  top: 2.6rem;
+  right: 0;
+  font-size: 2.7rem;
   cursor: pointer;
+  margin: 0;
 }
 
 nav {
@@ -84,8 +86,8 @@ nav a:hover,
   background-color: #eee;
   color: #000;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 7.3rem;
+  right: 0.6rem;
 }
 
 #menu::before {
