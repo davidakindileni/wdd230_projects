@@ -20,20 +20,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link rel="stylesheet" type="text/css" href="styles/normalize.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <header>
-        <img class="city-photo" src="images/ile-ife-city.jpg" alt="ife-city-pic">
-        <h1 class="page-name">Ile-Ife Chamber of Commerce</h1>
-        <div id="mode">
-            ☑️
-        </div>
+        <img class="logo-img" src="images/ile-ife.png" alt="ori-olokun-pic">
+        <p class="page-name">Ile-Ife Chamber of Commerce</p>
+        <!-- <p class="date-est">(established 2023)</p> -->
     </header>
     <nav>
-        <ul>
+        <button id="menu"></button>
+        <ul class="navigation">
             <li><a href="#" target="_blank">Home</a></li>
             <li><a href="#" target="_blank">Discover</a></li>
             <li><a href="#" target="_blank">Directory</a></li>
@@ -41,10 +42,50 @@
         </ul>
     </nav>
     <main>
+        <img class="city-photo" src="images/ile-ife-city.jpg" alt="ori-olokun-pic">
+        <h2>Current Events</h2>
+        <section class="card" id="learning-act">
+            <h3>Current Events</h3>
+            <ul>
+                <li>Week01: <a href="week01/holygrail.html" target="_blank">Layout</a> | <a
+                        href="week01/media-query.html" target="_blank">Media Queries</a> | <a
+                        href="https://codepen.io/davidakindileni/full/BaqevBy" target="_blank">JS
+                        Pen</a></li>
+                <li>Week02: <a href="week02/design.html" target="_blank">Design Principles</a> | <a
+                        href="https://codepen.io/davidakindileni/full/YzRqwRw" target="_blank">Hamburger Menu</a> | <a
+                        href="week02/bom.html" target="_blank">BOM Chapters</a>
+                </li>
+                <li>Week03: <a href="" target="_blank">Week03</a></li>
+                <li>Week04: <a href="" target="_blank">Week04</a></li>
+                <li>Week05: <a href="" target="_blank">Week05</a></li>
+                <li>Week06: <a href="" target="_blank">Week06</a></li>
+            </ul>
+        </section>
+        <section class="card" id="weather-info">
+            <h3>Information</h3>
+            <div class="info-card">
+                <p>Weather town</p>
+                <p>Day's temparature</p>
+                <p>Page visits:</p>
+            </div>
+        </section>
+
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> &nbsp;&nbsp;| &nbsp;&nbsp;Akinsola David Akindileni &nbsp;&nbsp;|
-            &nbsp;&nbsp;Ile-Ife, Osun State, Nigeria</p>
+        <img class="footer-img" src="images/ile-ife.png" alt="footer-ife-img">
+        <p class="footer-addr">Contact address: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+            dolorem architecto non ut ea
+            est quos beatae repudiandae explicabo illo.</p>
+        <div class="footer-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+
+        </div>
+        <p class="footer-info lg-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp; | &nbsp;&nbsp;
+            Akinsola David Akindileni &nbsp;&nbsp; | &nbsp;&nbsp; WDD230 Spring 2023 Project</p>
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
     </footer>
     <script src="scripts/getDates.js"></script>

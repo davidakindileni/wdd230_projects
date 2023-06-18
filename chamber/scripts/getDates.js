@@ -5,7 +5,7 @@ document.getElementById("currentyear").innerHTML = new Date().getFullYear();
 let a = document.lastModified;
 document.getElementById("lastmodified").innerHTML = a;
 
-// Hamburger Menu
+// Hamburger Menu script
 const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".navigation");
 
