@@ -1,7 +1,3 @@
-/* fonts and colours */
-
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
-
 :root {
   --primary-color: #8db38b;
   --secondary1-color: #bdbea9;
