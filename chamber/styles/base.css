@@ -13,6 +13,10 @@ body {
   width: 95vw;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   position: relative;
   display: flex;
@@ -22,8 +26,14 @@ header {
 .logo-img {
   width: 40vw;
   height: 120px;
-  margin-top: 20px;
+  margin: 20px 0;
   padding-right: 10px;
+}
+
+.page-name {
+  font-size: 7vw;
+  color: #2b3a67;
+  padding: 2rem 0 1.5rem;
 }
 
 .city-photo {
@@ -31,18 +41,35 @@ header {
   opacity: 0.8;
 }
 
-.page-name {
-  font-size: 6vw;
-  color: #2b3a67;
-  padding: 2rem 0 1.5rem;
+.join-button {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: 1px solid;
+  border-radius: 15%;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.join-button a:hover {
+  background-color: green;
+  color: black;
 }
 
 nav {
   background-color: #3f292b;
+  justify-content: space-evenly;
 }
 
 nav ul {
   list-style-type: none;
+  justify-content: center;
 }
 
 nav ul li:first-child a {
@@ -61,7 +88,6 @@ nav a {
   color: white;
   text-align: center;
   padding: 0.5rem;
-  text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -69,68 +95,72 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-/* small view navigation */
-#menu {
-  font-size: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 3px 7px 6px;
-  background-color: #eee;
-  color: #000;
-  position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-}
-
-#menu::before {
-  content: "☰";
-}
-
-#menu.open::before {
-  content: "❌";
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  background-color: #333;
-  color: #fff;
-}
-.navigation li {
-  display: none;
-}
-.navigation li a {
-  display: block;
-  padding: 1rem;
+.our-info h2 {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: rgb(6, 141, 89);
   text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-.navigation li a:hover {
-  background-color: #bbb;
-  color: #333;
-  font-weight: 700;
 }
 
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-  display: block;
-  width: 100%;
+.card {
+  margin: 20px auto;
+  max-width: 95vw;
+  padding: 1rem;
+  background-color: #d4d1d1;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.8);
 }
-.open li a {
-  display: block;
+
+.card h3 {
+  font-size: 15px;
+  font-weight: none;
+}
+
+.card p,
+.card a {
+  margin: 10px 0;
+  font-size: 13px;
+  max-width: 90vw;
+  padding-left: 10px;
+}
+
+.card a:hover {
+  color: rgb(6, 141, 89);
+  font-weight: bold;
+}
+
+.weather-info {
+  width: 95vw;
+}
+
+#card04,
+#card05,
+#card06 {
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
 }
 
 footer {
   display: block;
   width: 95vw;
-  margin: auto;
   padding: 2rem 0.5rem;
+  margin-top: 25px;
   background-color: #121619;
   color: #fff;
-  font-size: 3vw;
+  font-size: 4.5vw;
   text-align: center;
   line-height: 1.5;
+}
+
+.sm-scr {
+  display: initial;
+}
+
+.bg-scr {
+  display: none;
 }
 
 .footer-img {
@@ -200,6 +230,58 @@ footer {
   color: white;
 }
 
+/* small view navigation */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.navigation li {
+  display: none;
+}
+.navigation li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
+}
+.navigation li a:hover {
+  background-color: #bbb;
+  color: #333;
+  font-weight: bold;
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 100%;
+}
+.open li a {
+  display: block;
+}
+
 /* Larger screen views *********************/
 
 @media screen and (min-width: 421px) {
@@ -223,11 +305,6 @@ footer {
     font-size: 4vw;
   }
 
-  .date-est {
-    font-size: 1vw;
-    font-style: italic;
-  }
-
   .city-photo {
     height: 25vw;
   }
@@ -240,12 +317,12 @@ footer {
   }
 
   #menu {
-    top: 1.2rem;
-    right: 1rem;
+    display: none; /* hide hamburger button */
   }
 
   #menu {
-    display: none; /* hide hamburger button */
+    top: 1.2rem;
+    right: 1rem;
   }
 
   .navigation {
@@ -255,6 +332,71 @@ footer {
   .navigation li {
     display: block;
     flex: 1 1 100%;
+  }
+
+  .card {
+    margin: 0;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .our-info {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .current-events-hdr {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+  }
+
+  .join-button {
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+    max-width: 170px;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  .adverts-hdr {
+    grid-column: 5 / 9;
+    grid-row: 1 / 2;
+  }
+
+  #card01 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #card02 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #card03 {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+  }
+
+  #card04 {
+    grid-column: 6 / 8;
+    grid-row: 2 / 3;
+  }
+
+  #card05 {
+    grid-column: 6 / 8;
+    grid-row: 3 / 4;
+  }
+
+  #card06 {
+    grid-column: 6 / 8;
+    grid-row: 4 / 5;
+  }
+
+  .weather-info {
+    grid-column: 4 / 6;
+    grid-row: 6 / 7;
   }
 
   footer {
@@ -269,6 +411,21 @@ footer {
     font-size: 1vw;
     text-align: center;
     line-height: 1.5;
+  }
+
+  .sm-scr {
+    display: none;
+  }
+
+  .bg-scr {
+    display: initial;
+  }
+
+  .email,
+  .phone,
+  .card04 a {
+    margin: 0 auto;
+    text-align: center;
   }
 
   .footer-img {
@@ -301,7 +458,7 @@ footer {
   .last-mod {
     color: #b2ff00;
     grid-column: 4 / 7;
-    grid-row: 4 /;
+    grid-row: 4 / 5;
   }
 
   .fa {
@@ -309,6 +466,5 @@ footer {
     font-size: 30px;
     width: 50px;
     text-align: center;
-    text-decoration: none;
   }
 }

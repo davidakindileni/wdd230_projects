@@ -48,22 +48,76 @@
     </nav>
     <main>
         <img class="city-photo" src="images/ile-ife-city.jpg" alt="ori-olokun-pic">
-        <h2>Current Events</h2>
-        <section class="card" id="card01">
-            <h3>Event title</h3>
-            <img src="" alt="" class="card-pic">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis rerum quasi magni neque
-                similique non earum quos, temporibus molestias quae cupiditate pariatur quas deleniti.</p>
-        </section>
-        <section class="card" id="weather-info">
-            <h3>Information</h3>
-            <div class="info-card">
-                <p>Weather town</p>
-                <p>Day's temparature</p>
-                <p>Page visits:</p>
-            </div>
-        </section>
-
+        <div class="our-info">
+            <a class="join-button" href="#">Join Us Now!</a>
+            <h2 class="current-events-hdr">Current Events</h2>
+            <section class="card" id="card01">
+                <h3>Pot Luck Dinner</h3>
+                <hr class="hr-top">
+                <!-- <img src="" alt="" class="card-pic"> -->
+                <p class="event-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis
+                    rerum quasi magni
+                    neque
+                    similique non earum quos, temporibus molestias quae cupiditate pariatur quas deleniti.</p>
+                <a class="more-info" href="http://">more info ... </a>
+                <hr class="hr-btm">
+            </section>
+            <section class="card" id="card02">
+                <h3>Ladies' Nite Out</h3>
+                <hr class="hr-top">
+                <!-- <img src="" alt="" class="card-pic"> -->
+                <p class="event-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis
+                    rerum quasi magni
+                    neque
+                    similique non earum quos, temporibus molestias quae cupiditate pariatur quas deleniti.</p>
+                <a class="more-info" href="http://">more info ... </a>
+                <hr class="hr-btm">
+            </section>
+            <section class="card" id="card03">
+                <h3>Community Service Day</h3>
+                <hr class="hr-top">
+                <!-- <img src="" alt="" class="card-pic"> -->
+                <p class="event-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reiciendis
+                    rerum quasi magni
+                    neque
+                    similique non earum quos, temporibus molestias quae cupiditate pariatur quas deleniti.</p>
+                <a class="more-info" href="http://">more info ... </a>
+                <hr class="hr-btm">
+            </section>
+            <h2 class="adverts-hdr">Check these out!</h2>
+            <section class="card" id="card04">
+                <h3>Spotless Drycleaners</h3>
+                <hr class="hr-top">
+                <p class="tagline">We make them clean and fresh</p>
+                <p class="email">spotless@xyx.com</p>
+                <p class="phone">(+234) 0802-222-1276</p>
+                <a href="http://spotlesscleaners.com">http://spotlesscleaners.com</a>
+                <hr class="hr-btm">
+            </section>
+            <section class="card" id="card05">
+                <h3>Cookies R Us</h3>
+                <hr class="hr-top">
+                <p class="tagline">delicious, fresh, and nourishing</p>
+                <p class="email">dantzelpastries@gmail.com</p>
+                <p class="phone">(+234) 0712-920-3289</p>
+                <a href="http://dantzelpastries.com">http://dantzelpastries.com</a>
+                <hr class="hr-btm">
+            </section>
+            <section class="card" id="card06">
+                <h3>Larken Auto Shop</h3>
+                <hr class="hr-top">
+                <p class="tagline">for all your auto services and repairs</p>
+                <p class="email">larkenauto@outlook.com</p>
+                <p class="phone">(+234) 0803-356-6034</p>
+                <a href="http://larkenautos.com">http://larkenautos.com</a>
+                <hr class="hr-btm">
+            </section>
+            <section class="weather-info" id="ww_a29e31c04c12a" v="1.3" loc="id"
+                a='{"t":"horizontal","lang":"en","sl_lpl":1,"ids":["wl12044"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","el_whr":3}'>
+                Weather for the Following Location: <a href="https://2ua.org/de/nga/ile-ife/karte/"
+                    id="ww_a29e31c04c12a_u" target="_blank">Ile-Ife auf der Karte</a>
+            </section>
+        </div>
     </main>
     <footer>
         <img class="footer-img" src="images/ile-ife.png" alt="footer-ife-img">
@@ -78,11 +132,14 @@
             <a href="#" class="fa fa-instagram"></a>
 
         </div>
-        <p class="footer-info lg-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp; | &nbsp;&nbsp;
-            Akinsola David Akindileni &nbsp;&nbsp; | &nbsp;&nbsp; WDD230 Spring 2023 Project</p>
+        <p class="footer-info lg-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp<span
+                class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
+            Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp; WDD230
+            Spring 2023 Project</p>
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script async src="https://app1.weatherwidget.org/js/?id=ww_a29e31c04c12a"></script>
 
 </body>
 
