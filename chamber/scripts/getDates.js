@@ -14,7 +14,7 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-// Dark Mode script
+/* // Dark Mode script
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 
@@ -29,3 +29,4 @@ modeButton.addEventListener("click", () => {
     modeButton.textContent = "☑️";
   }
 });
+*/
