@@ -1,0 +1,155 @@
+h1 {
+  width: 60vw;
+  text-align: center;
+  color: #112a46;
+  background-color: #acc8e5;
+  margin: 40px auto;
+}
+
+main {
+  margin: 0 auto;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #333;
+}
+
+img {
+  width: 400px;
+  height: 600px;
+  animation: fade 15s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #001f3f;
+}
+
+footer {
+  display: block;
+  width: 95vw;
+  padding: 2rem 0.5rem;
+  margin-top: 25px;
+  background-color: #121619;
+  color: #fff;
+  font-size: 4.5vw;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.sm-scr {
+  display: initial;
+}
+
+.bg-scr {
+  display: none;
+}
+
+.footer-img {
+  height: clamp(0.5vh, 25vh, 30vh);
+  width: clamp(0.5vh, 25vh, 30vh);
+}
+.soc-med-icons {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 10px;
+}
+
+.footer-addr {
+  margin-top: 1.5rem;
+  padding: 0 30px;
+}
+
+.footer-icons {
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.footer-info {
+  margin-top: 1.5rem;
+  display: block;
+}
+
+.last-mod {
+  color: #b2ff00;
+}
+
+/* Larger screen views *********************/
+
+@media screen and (min-width: 421px) {
+  * {
+    margin: 0 auto;
+    max-width: 90vw;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 25px);
+    grid-gap: 0.5rem;
+    margin: 30px 0;
+    padding: 1rem 0.5rem;
+    background-color: #121619;
+    color: #fff;
+    font-size: 1vw;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .soc-med-icons {
+    margin: 0 15px;
+  }
+
+  .sm-scr {
+    display: none;
+  }
+
+  .bg-scr {
+    display: initial;
+  }
+
+  .footer-img {
+    height: 130px;
+    width: 150px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
+
+  .footer-addr {
+    padding: 0;
+    margin-top: 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+  }
+
+  .footer-icons {
+    margin: 0;
+    padding-top: 7px;
+    grid-column: 4 / 7;
+    grid-row: 1 / 3;
+    color: white;
+  }
+
+  .footer-info {
+    margin-top: 0;
+    grid-column: 4 / 7;
+    grid-row: 3 / 4;
+  }
+
+  .last-mod {
+    color: #b2ff00;
+    grid-column: 4 / 7;
+    grid-row: 4 / 5;
+  }
+}
