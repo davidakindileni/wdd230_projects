@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #001f3f;
 }
 
 header {
@@ -57,8 +58,8 @@ header {
 }
 
 .join-button a:hover {
-  background-color: green;
-  color: black;
+  background-color: #acc8e5;
+  color: #112a46;
 }
 
 nav {
@@ -123,7 +124,7 @@ nav ul li a:hover {
 }
 
 .card a:hover {
-  color: #f2af29;
+  color: #ff851b;
   font-weight: bold;
 }
 
@@ -164,6 +165,11 @@ footer {
 .footer-img {
   height: clamp(0.5vh, 25vh, 30vh);
   width: clamp(0.5vh, 25vh, 30vh);
+}
+.soc-med-icons {
+  max-width: 30px;
+  max-height: 30px;
+  margin: 0 10px;
 }
 
 .footer-addr {
@@ -413,6 +419,10 @@ footer {
     font-size: 1vw;
     text-align: center;
     line-height: 1.5;
+  }
+
+  .soc-med-icons {
+    margin: 0 15px;
   }
 
   .sm-scr {
