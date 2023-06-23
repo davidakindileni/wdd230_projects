@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy Loading Demonstration</title>
-    <meta name="description" content="WDD230 - Akinsola David Akindileni - Lazy loading Demonstration">
+    <title>Responsive Images</title>
+    <meta name="description" content="WDD230 - Akinsola David Akindileni - Responsive Images">
     <meta name="author" content="A. David Akindileni">
 
     <link rel="icon" href="../my-favicon.ico">
@@ -13,34 +13,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&20display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/lazyload.css">
+    <link rel="stylesheet" type="text/css" href="styles/responsive-images.css">
 </head>
 
 <body>
     <header>
-        <h1 class="pg-title">Lazy Loading Demonstration</h1>
+        <h1 class="pg-title">Responsive Images</h1>
     </header>
     <main>
-        <picture class="pic1">
-            <img src="images/fruit01.webp" alt="fruit pic1" width="400" height="600" class="img1">
-        </picture>
-        <picture class="pic2">
-            <img src="images/fruit02.webp" alt="fruit pic2" width="400" height="600" class="img2">
-        </picture>
-        <picture class="pic3">
-            <img src="images/fruit03.webp" alt="fruit pic3" width="400" height="600" class="img3">
-        </picture>
-        <picture class="pic4">
-            <img src="images/fruit04.webp" alt="fruit pic4" width="400" height="600" class="img4">
-        </picture>
-        <picture class="pic5">
-            <img src="images/fruit05.webp" alt="fruit pic5" width="400" height="600" class="img5">
-        </picture>
-        <picture class="pic6">
-            <img src="images/fruit06.webp" alt="fruit pic6" width="400" height="600" class="img6">
-        </picture>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000)">
+                <img src="images/hero-large.webp" alt="temple-pic" width="1500" height="750">
+            </picture>
+        </div>
     </main>
-    <footer>
+    <!-- <footer>
         <img class="footer-img" src="images/ile-ife.png" alt="footer-ife-img">
         <p class="footer-addr">Contact address: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
             dolorem architecto non ut ea
@@ -58,7 +47,7 @@
             Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp; WDD230
             Spring 2023 Project</p>
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
-    </footer>
+    </footer> -->
     <script src="scripts/lazyload.js"></script>
 
 </body>
