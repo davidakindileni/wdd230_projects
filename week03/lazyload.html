@@ -17,39 +17,37 @@
 </head>
 
 <body>
-    <center>
-        <header>
-            <h1>Lazy Loading Demonstration</h1>
-        </header>
-        <main>
-            <picture>
-                <img src="images/fruit01.webp" alt="fruit pic1" width="400" height="600">
-            </picture>
-            <picture>
-                <img src="images/fruit02.webp" alt="fruit pic2" width="400" height="600">
-            </picture>
-            <picture>
-                <img src="images/fruit03.webp" alt="fruit pic3" width="400" height="600">
-            </picture>
-            <picture>
-                <img src="images/fruit04.webp" alt="fruit pic4" width="400" height="600">
-            </picture>
-            <picture>
-                <img src="images/fruit05.webp" alt="fruit pic5" width="400" height="600">
-            </picture>
-            <picture>
-                <img src="images/fruit06.webp" alt="fruit pic6" width="400" height="600">
-            </picture>
-        </main>
-        <footer>
-            <p class="footer-info lg-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span
-                    class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
-                Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
-                WDD230
-                Spring 2023 Project</p>
-            <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
-        </footer>
-    </center>
+    <header>
+        <h1>Lazy Loading Demonstration</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/fruit01.webp" alt="fruit pic1" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/fruit02.webp" alt="fruit pic2" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/fruit03.webp" alt="fruit pic3" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/fruit04.webp" alt="fruit pic4" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/fruit05.webp" alt="fruit pic5" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img src="images/fruit06.webp" alt="fruit pic6" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+    <footer>
+        <p class="footer-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span class="bg-scr"> |
+            </span><br class="sm-scr">&nbsp;&nbsp;
+            Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
+            WDD230
+            Spring 2023 Project</p>
+        <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
+    </footer>
     <script src="scripts/lazyload.js"></script>
 
 </body>
