@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   max-width: 400px;
+  box-sizing: border-box;
   place-items: center;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   padding: 1rem;
   background-color: #09814a;
@@ -31,15 +31,16 @@ header {
 
 #mode {
   position: absolute;
-  top: 2.6rem;
+  top: 2rem;
   right: 0;
-  font-size: 2.7rem;
+  font-size: 2.2rem;
   cursor: pointer;
   margin: 0;
 }
 
 nav {
   background-color: #bcb382;
+  margin: 10px 0;
 }
 
 nav ul {
@@ -75,14 +76,14 @@ nav a:hover,
 
 /* small view navigation */
 #menu {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 3px 7px 6px;
   background-color: #eee;
   color: #000;
   position: absolute;
-  top: 7.3rem;
-  right: 0.6rem;
+  top: 5.7rem;
+  right: 0.4rem;
 }
 
 #menu::before {
@@ -123,6 +124,49 @@ nav a:hover,
 }
 .open li a {
   display: block;
+}
+
+h2 {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  /* height: 300px; */
+}
+
+.hero img,
+.google-map {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.google-map {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-img-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: radial-gradient(#fff, #4d5b97);
+  border: 0.5px solid rgba(0, 0, 0, 0.75);
+  padding: 0 0.5rem;
+  box-shadow: 0 0 3rem #fff;
+  opacity: 0.75;
+}
+
+.hero-img-name p {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 500;
+  font-size: clamp(15px, 4vw, 30px);
+  color: black;
 }
 
 main {
@@ -182,12 +226,20 @@ footer {
   color: #b2ff00;
 }
 
+.sm-scr {
+  display: initial;
+}
+
+.bg-scr {
+  display: none;
+}
+
 /* Larger screen views *********************/
 
 @media screen and (min-width: 401px) {
   * {
-    max-width: 720px;
     margin: 0 auto;
+    max-width: 720px;
   }
 
   header img,
@@ -230,12 +282,12 @@ footer {
     grid-template-columns: repeat(4, minmax(120px, 1fr));
   }
 
-  .hero-img {
+  .hero {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
     justify-content: center;
-    width: 100%;
   }
+
   main h2 {
     grid-column: 1 / 5;
     grid-row: 2 / 3;
@@ -269,5 +321,13 @@ footer {
     margin-top: 10px;
     font-size: clamp(8px, 12vw, 16px);
     width: 100%;
+  }
+
+  .sm-scr {
+    display: none;
+  }
+
+  .bg-scr {
+    display: initial;
   }
 }

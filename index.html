@@ -48,13 +48,15 @@
         </ul>
     </nav>
     <main>
-        <div class="hero-img">
-            <!-- <img src="images/hero-small.webp" alt="temple-pic" width="960" height="220"> -->
-            <!-- <picture>
+        <div class="hero">
+            <picture>
                 <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-                <source srcset="images/hero-large.webp" media="(min-width: 401px)">
-                <img src="images/hero-large.webp" alt="temple-pic" width="960" height="480">
-            </picture> -->
+                <source srcset="images/hero-medium.webp" media="(max-width: 960px)">
+                <img src="images/hero-medium.webp" alt="Aba Nigeria Temple" width="1500" height="750">
+            </picture>
+            <div class="hero-img-name">
+                <p>Aba Nigeria Temple</p>
+            </div>
         </div>
 
         <h2>WDD 230: Web Frontend Development</h2>
@@ -84,13 +86,20 @@
             <div class="info-card">
                 <p>Weather town</p>
                 <p>Day's temparature</p>
-                <p>Page visits:</p>
+                <p><span class="label">Page visits: </span><span class="visits"></span></p>
             </div>
         </section>
+        <iframe class="google-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31706.975866814682!2d3.375343304527844!3d6.60060916142619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92fbac068a39%3A0x4222a48f093f305!2sAlamu%20Taiwo%20St%2C%20Ikosi%20Ketu%20105102%2C%20Ikeja%2C%20Lagos!5e0!3m2!1sen!2sng!4v1688122126853!5m2!1sen!2sng"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> &nbsp;&nbsp;| &nbsp;&nbsp;Akinsola David Akindileni &nbsp;&nbsp;|
-            &nbsp;&nbsp;Ile-Ife, Osun State, Nigeria</p>
+        <p class="footer-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span class="bg-scr"> |
+            </span><br class="sm-scr">&nbsp;&nbsp;
+            Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
+            WDD230
+            Spring 2023 Project</p>
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
     </footer>
     <script src="scripts/getDates.js"></script>
