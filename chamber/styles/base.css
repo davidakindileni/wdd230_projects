@@ -1,3 +1,5 @@
+/* General styles for index  and chamber pages */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,62 +19,27 @@ a {
 }
 
 header {
-  position: relative;
+  /* position: relative; */
   display: flex;
-  width: 100px;
-}
-
-.logo-img {
-  width: 40vw;
-  height: 120px;
-  margin: 20px 0;
-  padding-right: 10px;
-}
-
-.page-name {
-  font-size: 6vw;
-  color: #2b3a67;
-  padding: 1rem 0 1rem;
-}
-
-.city-photo {
-  width: 95vw;
-  opacity: 0.8;
-}
-
-.join-button {
-  display: block;
-  width: 100%;
-  max-width: 120px;
-  height: 40px;
-  background-color: #d8bd8a;
-  color: black;
-  border: 1px solid;
-  border-radius: 15%;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 10px;
-  align-items: center;
-  margin: 15px auto;
-  font-weight: bold;
-}
-
-.join-button a:hover {
-  background-color: #acc8e5;
-  color: #112a46;
-}
-
-nav {
-  background-color: #3f292b;
-  justify-content: space-evenly;
-}
-
-nav ul {
-  list-style: none;
+  /* width: 100px; */
   justify-content: center;
 }
 
-nav ul li:first-child a {
+.logo-img {
+  width: 30vw;
+  height: auto;
+  margin: 10px 0;
+  padding-right: 10px;
+  left: 0px;
+}
+
+.page-name {
+  margin-top: 20px;
+  font-size: 5vw;
+  color: #2b3a67;
+}
+
+/* nav ul li:first-child a {
   background-color: #dbbea1;
   color: black;
 }
@@ -82,64 +49,33 @@ nav ul li:first-child a:hover {
   color: #2d4739;
   font-weight: bold;
 }
+*/
 
-nav a {
+.navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation li a {
   display: block;
-  color: white;
-  text-align: center;
-  padding: 0.5rem;
-}
-
-nav ul li a:hover {
-  color: #f2af29;
-  font-weight: bold;
-}
-
-.our-info h2 {
-  margin-top: 15px;
-  margin-bottom: 0px;
-  color: blue;
-  text-align: center;
-}
-
-.card {
-  margin: 20px auto;
-  max-width: 95vw;
   padding: 1rem;
-  background-color: #d4d1d1;
-  border: 1px solid #333;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.8);
-}
-
-.card h3 {
-  font-size: 15px;
-}
-
-.card p,
-.card a {
-  margin: 10px 0;
-  font-size: 13px;
-  max-width: 90vw;
-  padding-left: 10px;
-}
-
-.card a:hover {
-  color: #ff851b;
-  font-weight: bold;
-}
-
-.weather-info {
-  width: 95vw;
-}
-
-#card04,
-#card05,
-#card06 {
   text-align: center;
+  color: #fff;
 }
 
-.tagline {
-  font-style: italic;
+.navigation li a:active,
+.navigation li a:hover {
+  background-color: #dbbea1;
+  color: black;
+  font-weight: bold;
 }
 
 footer {
@@ -191,6 +127,55 @@ footer {
   color: #b2ff00;
 }
 
+/* Styles for index.html */
+
+.our-info h2 {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: blue;
+  text-align: center;
+}
+
+.card {
+  margin: 20px auto;
+  max-width: 95vw;
+  padding: 1rem;
+  background-color: #d4d1d1;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.card h3 {
+  font-size: 15px;
+}
+
+.card p,
+.card a {
+  margin: 10px 0;
+  font-size: 13px;
+  max-width: 90vw;
+  padding-left: 10px;
+}
+
+.card a:hover {
+  color: #ff851b;
+  font-weight: bold;
+}
+
+.weather-info {
+  width: 95vw;
+}
+
+#card04,
+#card05,
+#card06 {
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+}
+
 /* small view navigation */
 #menu {
   font-size: 1.5rem;
@@ -211,32 +196,6 @@ footer {
   content: "❌";
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  background-color: #333;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.navigation li {
-  display: none;
-}
-
-.navigation li a {
-  display: block;
-  padding: 1rem;
-  text-align: center;
-  color: #fff;
-}
-
-.navigation li a:hover {
-  background-color: #bbb;
-  color: #333;
-  font-weight: bold;
-}
-
 /* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
 .open li {
   display: block;
@@ -244,6 +203,39 @@ footer {
 }
 .open li a {
   display: block;
+}
+
+/* Styles for discover.html */
+
+/* Styles for join.html */
+
+/* Styles for base.css */
+
+.city-photo {
+  width: 95vw;
+  opacity: 0.8;
+}
+
+.join-button {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  background-color: #d8bd8a;
+  color: black;
+  border: 1px solid;
+  border-radius: 15%;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  align-items: center;
+  margin: 15px auto;
+  font-weight: bold;
+}
+
+.join-button a:hover {
+  background-color: #acc8e5;
+  color: #112a46;
 }
 
 /* Larger screen views *********************/
@@ -428,12 +420,5 @@ footer {
     color: #b2ff00;
     grid-column: 4 / 7;
     grid-row: 4 / 5;
-  }
-
-  .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
   }
 }

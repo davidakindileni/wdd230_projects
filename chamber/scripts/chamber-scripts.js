@@ -14,19 +14,16 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-/* // Dark Mode script
-const modeButton = document.querySelector("#mode");
-const main = document.querySelector("main");
-
-modeButton.addEventListener("click", () => {
-  if (modeButton.textContent.includes("☑️")) {
-    main.style.background = "#000";
-    main.style.color = "#fff";
-    modeButton.textContent = "❎";
-  } else {
-    main.style.background = "#eee";
-    main.style.color = "#000";
-    modeButton.textContent = "☑️";
-  }
-});
-*/
+/* Check for the active navigation button */
+var navi = document.getElementById("nav-bar");
+var links = navi.getElementsByClassName("navlink");
+for (var i = 0; i < links.length; i++) {
+  links[i].addEventListener(
+    "click",
+    ready(function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    })
+  );
+}
