@@ -25,7 +25,7 @@
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
 </head>
 
-<body>
+<body id="chamber">
     <header>
         <img class="logo-img" src="images/ile-ife.png" alt="ori-olokun-pic">
         <h1 class="page-name">Ile-Ife Chamber of Commerce</h1>
@@ -103,17 +103,18 @@
                 <hr class="hr-btm">
             </section>
             <section class="card weather-info">
-                <h3>Weather card</h3>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt aliquam
-                perspiciatis exercitationem dolores eligendi adipisci inventore, laboriosam saepe eum minima.
+                <a class="weatherwidget-io" href="https://forecast7.com/en/7d494d55/ife/" data-label_1="Ife"
+                    data-days="3" data-theme="original">Ife</a>
+                <script>
+                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                </script>
             </section>
         </div>
     </main>
     <footer>
         <img class="footer-img" src="images/ile-ife.png" alt="footer-ife-img">
-        <p class="footer-addr">Contact address: <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-            dolorem architecto non ut ea
-            est quos beatae repudiandae explicabo illo.</p>
+        <p class="footer-addr">Contact address: <br>112 Lalupon Avenue, Ile-Ife, <br class="sm-scr"> Osun State, Nigeria
+        </p>
         <div class="footer-icons">
             <a href="#"><img class="soc-med-icons" src="images/fb-2.png" alt="FB icon"></a>
             <a href="#"><img class="soc-med-icons" src="images/tw-2.png" alt="TW icon"></a>
@@ -122,8 +123,8 @@
             <a href="#"><img class="soc-med-icons" src="images/inst-1.png" alt="IN icon"></a>
 
         </div>
-        <p class="footer-info lg-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span
-                class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
+        <p class="footer-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span class="bg-scr"> |
+            </span><br class="sm-scr">&nbsp;&nbsp;
             Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp; WDD230
             Spring 2023 Project</p>
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>

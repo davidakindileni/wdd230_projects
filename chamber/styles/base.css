@@ -10,7 +10,9 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: #f3eded;
-  width: 95vw;
+  width: 90vw;
+  /* max-width: 400px;  */
+  margin: 0 auto;
 }
 
 a {
@@ -19,27 +21,28 @@ a {
 }
 
 header {
-  /* position: relative; */
+  position: relative;
   display: flex;
-  /* width: 100px; */
-  justify-content: center;
+  width: 100px;
+  /* justify-content: center; */
 }
 
 .logo-img {
-  width: 30vw;
-  height: auto;
-  margin: 10px 0;
+  width: 40vw; /* 30vw */
+  height: 120px; /* auto */
+  margin: 20px 0; /* 10px 0 */
   padding-right: 10px;
   left: 0px;
 }
 
 .page-name {
-  margin-top: 20px;
-  font-size: 5vw;
+  font-size: 6vw; /* 5vw */
   color: #2b3a67;
+  /* margin-top: 20px; */
+  padding: 1rem 0 1rem;
 }
 
-/* nav ul li:first-child a {
+nav ul li:first-child a {
   background-color: #dbbea1;
   color: black;
 }
@@ -49,7 +52,6 @@ nav ul li:first-child a:hover {
   color: #2d4739;
   font-weight: bold;
 }
-*/
 
 .navigation {
   display: flex;
@@ -80,7 +82,7 @@ nav ul li:first-child a:hover {
 
 footer {
   display: block;
-  width: 95vw;
+  width: 90vw;
   padding: 2rem 0.5rem;
   margin-top: 25px;
   background-color: #121619;
@@ -163,17 +165,45 @@ footer {
 }
 
 .weather-info {
-  width: 95vw;
+  width: 90vw;
+  border: none;
 }
 
-#card04,
-#card05,
-#card06 {
+#chamber #card04,
+#chamber #card05,
+#chamber #card06 {
   text-align: center;
 }
 
 .tagline {
   font-style: italic;
+}
+
+.city-photo {
+  width: 90vw;
+  opacity: 0.8;
+}
+
+.join-button {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  height: 40px;
+  background-color: #d8bd8a;
+  color: black;
+  border: 1px solid;
+  border-radius: 25px;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  align-items: center;
+  margin: 15px auto;
+  font-weight: bold;
+}
+
+.join-button a:hover {
+  background-color: #acc8e5;
+  color: #112a46;
 }
 
 /* small view navigation */
@@ -207,36 +237,66 @@ footer {
 
 /* Styles for discover.html */
 
-/* Styles for join.html */
-
-/* Styles for base.css */
-
-.city-photo {
-  width: 95vw;
-  opacity: 0.8;
+.div1 {
+  max-width: 90vw;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #eee;
 }
 
-.join-button {
-  display: block;
-  width: 100%;
-  max-width: 120px;
-  height: 40px;
-  background-color: #d8bd8a;
-  color: black;
-  border: 1px solid;
-  border-radius: 15%;
-  text-decoration: none;
-  text-align: center;
-  padding-top: 10px;
-  align-items: center;
-  margin: 15px auto;
+.div1 .card {
+  margin: 20px auto;
+  max-width: 95vw;
+  padding: 1rem;
+  background-color: #d4d1d1;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.8);
+}
+
+.div1 .card p,
+.div1 .card a {
+  margin: 10px 0;
+  font-size: 13px;
+  max-width: 90vw;
+  padding-left: 10px;
+}
+
+.div1 .card a:hover {
+  color: #ff851b;
   font-weight: bold;
 }
 
-.join-button a:hover {
-  background-color: #acc8e5;
-  color: #112a46;
+.div-card01 {
+  display: flex;
+  margin: 15px 0 10px;
 }
+
+.irc-img {
+  width: 80px;
+  height: auto;
+  align-items: left;
+}
+
+#discover .hr-top {
+  margin-bottom: 10px;
+}
+
+#discover h2 {
+  font-size: 20px;
+  padding: 15px 0;
+  margin: 20px 0;
+  border: 1px solid #333;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.places-img {
+  width: 80vw;
+  max-height: 220px;
+}
+/* Styles for join.html */
+
+/* Styles for base.css */
 
 /* Larger screen views *********************/
 
@@ -290,24 +350,26 @@ footer {
     flex: 1 1 100%;
   }
 
-  .card {
+  /* for Chamber Home Page */
+
+  #chamber .card {
     margin: 0;
     max-width: 100%;
     padding: 1rem;
   }
 
-  .our-info {
+  #chamber .our-info {
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     grid-gap: 1rem;
   }
 
-  .current-events-hdr {
+  #chamber .current-events-hdr {
     grid-column: 1 / 5;
     grid-row: 1 / 2;
   }
 
-  .join-button {
+  #chamber .join-button {
     grid-column: 4 / 6;
     grid-row: 2 / 3;
     max-width: 170px;
@@ -315,46 +377,139 @@ footer {
     padding-top: 15px;
   }
 
-  .adverts-hdr {
+  #chamber .adverts-hdr {
     grid-column: 5 / 9;
     grid-row: 1 / 2;
   }
 
-  #card01 {
+  #chamber #card01 {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
   }
 
-  #card02 {
+  #chamber #card02 {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
   }
 
-  #card03 {
+  #chamber #card03 {
     grid-column: 2 / 4;
     grid-row: 4 / 5;
   }
 
-  #card04 {
+  #chamber #card04 {
     grid-column: 6 / 8;
     grid-row: 2 / 3;
   }
 
-  #card05 {
+  #chamber #card05 {
     grid-column: 6 / 8;
     grid-row: 3 / 4;
   }
 
-  #card06 {
+  #chamber #card06 {
     grid-column: 6 / 8;
     grid-row: 4 / 5;
   }
 
-  .weather-info {
+  #chamber .weather-info {
     grid-column: 4 / 6;
     grid-row: 6 / 7;
   }
 
+  /* Discover Page */
+  .div1 {
+    display: grid;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: repeat(8, max-height(250px));
+    grid-gap: 1rem;
+  }
+
+  .div1 .card {
+    margin: 0 auto;
+  }
+
+  .div1-hdr {
+    grid-column: 1 / 4;
+    grid-row: 1/2;
+  }
+
+  #discover #card01 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #discover #card02 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #discover #card03 {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+  }
+
+  #discover #card10 {
+    grid-column: 1/4;
+    grid-row: 5/6;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+  }
+
+  .div2-hdr {
+    grid-column: 4 / 10;
+    grid-row: 1 / 2;
+  }
+
+  .places-img {
+    width: 360px;
+    height: 250px;
+  }
+
+  .places-img:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
+  #discover #card04 {
+    grid-column: 4 / 7;
+    grid-row: 2 / 4;
+    height: 100%;
+  }
+
+  #discover #card05 {
+    grid-column: 7 / 10;
+    grid-row: 2 / 4;
+    height: 100%;
+  }
+
+  #discover #card06 {
+    grid-column: 4 / 7;
+    grid-row: 4 / 6;
+    height: 100%;
+  }
+
+  #discover #card07 {
+    grid-column: 7 / 10;
+    grid-row: 4 / 6;
+    height: 100%;
+  }
+
+  #discover #card08 {
+    grid-column: 4 / 7;
+    grid-row: 6 / 8;
+    height: 100%;
+  }
+
+  #discover #card09 {
+    grid-column: 7 / 10;
+    grid-row: 6 / 8;
+    height: 100%;
+  }
+
+  /* for both Chamber Home and Discover Pages */
   footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
