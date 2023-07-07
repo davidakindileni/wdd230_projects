@@ -274,7 +274,6 @@ footer {
 .irc-img {
   width: 80px;
   height: auto;
-  align-items: left;
 }
 
 #discover .hr-top {
@@ -421,7 +420,7 @@ footer {
   .div1 {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
-    grid-template-rows: repeat(8, max-height(250px));
+    grid-template-rows: repeat(7, 145px);
     grid-gap: 1rem;
   }
 
