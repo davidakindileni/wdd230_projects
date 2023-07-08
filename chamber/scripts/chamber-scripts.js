@@ -22,7 +22,7 @@ const lastVisitDate = window.localStorage.getItem("storedLastVisit");
 if (lastVisitDate == null) {
   // consider first visit
   lastVisit.textContent = `Welcome! 🥳 Let us know if you have any questions.`;
-  localStorage.setItem("storedLastVisit", JSON.stringify(new Date())); // your choice of format
+  localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
 } else {
   const lastVisited = localStorage.getItem("storedLastVisit");
   // your logic to calculate days based on format stored.
@@ -32,7 +32,7 @@ if (lastVisitDate == null) {
   const nowDate = Date.parse(currentDate);
   const difference = nowDate - lastDate;
   const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const textEnd = " days ago";
+  const textEnd = ` days ago`;
 
   // lastVisit.textContent = differenceInDays; //
   if (differenceInDays < 1) {
@@ -48,4 +48,5 @@ if (lastVisitDate == null) {
   }
 
   lastVisit.textContent = `You last visted ` + differenceInDays + textEnd;
+  localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
 }
