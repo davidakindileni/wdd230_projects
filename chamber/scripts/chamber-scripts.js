@@ -32,6 +32,7 @@ if (lastVisitDate == null) {
   const nowDate = Date.parse(currentDate);
   const difference = nowDate - lastDate;
   const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const textEnd = "days ago";
 
   // lastVisit.textContent = differenceInDays; //
   if (differenceInDays < 1) {
@@ -39,11 +40,11 @@ if (lastVisitDate == null) {
   }
 
   if (differenceInDays == 1) {
-    const textEnd = ` day ago.`;
+    textEnd = ` day ago.`;
   }
 
   if (differenceInDays > 1) {
-    const textEnd = ` days ago.`;
+    textEnd = ` days ago.`;
   }
 
   lastVisit.textContent = `You last visted ` + differenceInDays + textEnd;
