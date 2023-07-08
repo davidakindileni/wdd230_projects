@@ -32,21 +32,15 @@ if (lastVisitDate == null) {
   const nowDate = Date.parse(currentDate);
   const difference = nowDate - lastDate;
   const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const textEnd = ` days ago`;
 
-  // lastVisit.textContent = differenceInDays; //
   if (differenceInDays < 1) {
     lastVisit.textContent = `Back so soon! Awesome!`;
+  } else if (differenceInDays == 1) {
+    lastVisit.textContent = `You last visted ` + differenceInDays + ` day ago`;
   }
-
-  if (differenceInDays == 1) {
-    textEnd = ` day ago.`;
-  }
-
   if (differenceInDays > 1) {
-    textEnd = ` days ago.`;
+    lastVisit.textContent = `You last visted ` + differenceInDays + ` days ago`;
   }
 
-  lastVisit.textContent = `You last visted ` + differenceInDays + textEnd;
   localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
 }
