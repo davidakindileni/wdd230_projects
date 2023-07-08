@@ -39,11 +39,11 @@ if (lastVisitDate == null) {
   }
 
   if (differenceInDays == 1) {
-    textEnd = ` day ago.`;
+    const textEnd = ` day ago.`;
   }
 
   if (differenceInDays > 1) {
-    textEnd = ` days ago.`;
+    const textEnd = ` days ago.`;
   }
 
   lastVisit.textContent = `You last visted ` + differenceInDays + textEnd;
