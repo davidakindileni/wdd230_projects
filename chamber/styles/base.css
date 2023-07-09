@@ -180,7 +180,8 @@ footer {
 }
 
 .city-photo {
-  width: 90vw;
+  width: 100%;
+  height: auto;
   opacity: 0.8;
 }
 
@@ -246,7 +247,7 @@ footer {
 
 .div1 .card {
   margin: 20px auto;
-  max-width: 95vw;
+  /* max-width: 95vw; */
   padding: 1rem;
   background-color: #d4d1d1;
   border: 1px solid #333;
@@ -268,11 +269,11 @@ footer {
 
 .div-card01 {
   display: flex;
-  margin: 15px 0 10px;
+  /* margin: 15px 0 10px; */
 }
 
 .irc-img {
-  width: 80px;
+  width: 100%;
   height: auto;
 }
 
@@ -290,8 +291,8 @@ footer {
 }
 
 .places-img {
-  width: 80vw;
-  max-height: 220px;
+  width: 100%;
+  height: auto;
 }
 
 #discover #card10 {
@@ -309,6 +310,7 @@ footer {
   * {
     margin: 0 auto;
     max-width: 90vw;
+    text-align: center;
   }
 
   header {
@@ -324,10 +326,6 @@ footer {
 
   .page-name {
     font-size: 4vw;
-  }
-
-  .city-photo {
-    height: 25vw;
   }
 
   nav ul {
@@ -390,6 +388,7 @@ footer {
   #chamber #card01 {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+    margin-bottom: 30px;
   }
 
   #chamber #card02 {
@@ -423,6 +422,7 @@ footer {
   }
 
   /* Discover Page */
+
   .div1 {
     display: grid;
     grid-template-columns: repeat(9, minmax(0, 1fr));
@@ -464,11 +464,6 @@ footer {
   .div2-hdr {
     grid-column: 4 / 10;
     grid-row: 1 / 2;
-  }
-
-  .places-img {
-    width: 360px;
-    height: 250px;
   }
 
   .places-img:hover {
