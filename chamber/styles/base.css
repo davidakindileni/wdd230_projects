@@ -73,8 +73,8 @@ nav ul li:first-child a:hover {
   color: #fff;
 }
 
-.navigation li a:active,
-.navigation li a:hover {
+.navigation ul li a:active,
+.navigation ul li a:hover {
   background-color: #dbbea1;
   color: black;
   font-weight: bold;

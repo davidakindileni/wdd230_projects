@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. David Akindileni - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD230 - Web Frontend Development for Akinsola David Akindileni for Form Design">
+    <meta name="author" content="A. David Akindileni">
+
+    <!--  Essential META Tags -->
+    <meta property="og:image" content="https://davidakindileni.github.io/wdd230/images/ada-pic.webp">
+    <meta property="og:title" content="WDD230 Course Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Form design for WDD230 Frontend Development ">
+    <meta property="fb:app_id" content="668803648031186">
+    <meta property="og:url" content="https://davidakindileni.github.io/wdd230/index.html">
+
+    <link rel="icon" href="my-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&20display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img class="my-photo" src="images/ada-pic.webp" alt="my-pic">
+        <h1 class=" my-name">Akinsola David Akindileni</h1>
+        <div id="mode">
+            ☑️
+        </div>
+    </header>
+    <nav>
+        <button id="menu" title="Menu button"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" target="_blank">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Your Details </legend>
+                <label class="top"> Username* <input type="text" name="fname" id="username" required></label>
+                <label class="top"> Password* <input type="password" name="password1" id="usrpwd1"
+                        pattern="[A-Za-z0-9]{8,}" required></label>
+                <label class="top"> Confirm Password* <input type="password" name="password2" id="usrpwd2"
+                        pattern="[A-Za-z0-9]{8,}" required></label>
+                <label class="top"> Email* <input type="email" name="email" id="usremail"
+                        placeholder="Please enter a valid email address" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                        required></label>
+                <label class="rng"><input type="range" id="pagerating" name="r" min="1" max="10" value="1" step="1"
+                        list="rangevalues"></label>
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Join the Chamber">
+        </form>
+
+    </main>
+    <footer>
+        <p class="footer-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span class="bg-scr"> |
+            </span><br class="sm-scr">&nbsp;&nbsp;
+            Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp;
+            WDD230
+            Spring 2023 Project</p>
+        <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
+    </footer>
+    <script src="scripts/form.js"></script>
+
+</body>
+
+</html>

@@ -107,13 +107,6 @@ form label.top select {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/*----------- FOOTER --------------*/
-footer {
-  background-color: #ddd;
-  padding: 0.5rem 2%;
-  text-align: center;
-}
-
 form label.sbs {
   display: block;
   padding: 0.75rem 0;
@@ -137,6 +130,13 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+  background-color: #ddd;
+  padding: 0.5rem 2%;
+  text-align: center;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
