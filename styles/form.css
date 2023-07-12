@@ -265,12 +265,27 @@ form input.submitBtn {
   max-width: 20rem;
 }
 
+form label.top input::placeholder {
+  font-size: 0.8rem;
+}
+
 form label.top input:required {
   border-left: red solid 6px;
 }
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+/* Record Page  *********************/
+
+#recordbody {
+  text-align: center;
+}
+
+#recordbody h1,
+#recordbody p {
+  padding: 0.5rem 0;
 }
 
 /* Larger screen views *********************/

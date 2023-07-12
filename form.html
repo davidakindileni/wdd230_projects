@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&20display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
     <link rel="stylesheet" type="text/css" href="styles/larger.css">
 </head>
 
@@ -36,9 +36,9 @@
     <nav>
         <button id="menu" title="Menu button"></button>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="chamber/index.html" target="_blank">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html" target="_blank">Site Plan</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
@@ -51,7 +51,8 @@
                 <label class="top"> Password* <input type="password" name="password1" id="usrpwd1"
                         pattern="[A-Za-z0-9]{8,}" required></label>
                 <label class="top"> Confirm Password* <input type="password" name="password2" id="usrpwd2"
-                        pattern="[A-Za-z0-9]{8,}" required></label>
+                        placeholder="letters, numbers and at least 8 characters" pattern="[A-Za-z0-9]{8,}"
+                        required></label>
                 <label class="top"> Email* <input type="email" name="email" id="usremail"
                         placeholder="Please enter a valid email address" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
                         required></label>

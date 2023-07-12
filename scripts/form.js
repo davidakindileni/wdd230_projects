@@ -35,7 +35,7 @@ const upwd1 = document.querySelector("#usrpwd1");
 const upwd2 = document.querySelector("#usrpwd2");
 const message = document.querySelector("#formmessage");
 
-kp2.addEventListener("focusout", checkSame);
+upwd2.addEventListener("focusout", checkSame);
 
 // This should be refactored.
 function checkSame() {
