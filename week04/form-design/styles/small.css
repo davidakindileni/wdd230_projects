@@ -1,13 +1,13 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {
+/* html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-}
+} */
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  /*  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; */
   box-sizing: border-box;
 }
 
@@ -76,7 +76,7 @@ form fieldset {
   margin: 2rem 0;
   border: 1px solid #445ba9;
   border-radius: 10px;
-  padding: 0.5rem 2;
+  padding: 0.5rem 2%;
 }
 
 form legend {
@@ -95,7 +95,7 @@ form div {
 
 form label.top input,
 form label.top select {
-  -webkit-appearance: none;
+  /*  -webkit-appearance: none; */
   display: block;
   font-size: 1rem;
   border: 1px solid #999;
@@ -103,7 +103,7 @@ form label.top select {
   padding: 0.75rem;
   color: #555;
   width: 100%;
-  max-width: 20 rem;
+  max-width: 20rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
