@@ -30,6 +30,14 @@ modeButton.addEventListener("click", () => {
   }
 });
 
+// check and highlight active nav link
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active");
+  }
+});
+
 // get number of page visits
 // 1️⃣ Initialize display element variable
 const visitsDisplay = document.querySelector(".visits");

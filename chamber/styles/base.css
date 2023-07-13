@@ -42,7 +42,7 @@ header {
   padding: 1rem 0 1rem;
 }
 
-nav ul li:first-child a {
+/* nav ul li:first-child a {
   background-color: #dbbea1;
   color: black;
 }
@@ -52,6 +52,7 @@ nav ul li:first-child a:hover {
   color: #2d4739;
   font-weight: bold;
 }
+*/
 
 .navigation {
   display: flex;
@@ -73,8 +74,13 @@ nav ul li:first-child a:hover {
   color: #fff;
 }
 
-.navigation ul li a:active,
-.navigation ul li a:hover {
+.navigation li .active {
+  background-color: #dbbea1;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
   background-color: #dbbea1;
   color: black;
   font-weight: bold;

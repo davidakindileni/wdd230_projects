@@ -32,11 +32,11 @@
     </header>
     <nav>
         <button id="menu"></button>
-        <ul class="navigation" id="nav-bar">
-            <li class="navitem"><a class="navlink active" href="index.html">Home</a></li>
-            <li class="navitem"><a class="navlink" href="discover.html">Discover</a></li>
-            <li class="navitem"><a class="navlink" href="#">Directory</a></li>
-            <li class="navitem"><a class="navlink" href="#">Join</a></li>
+        <ul class="navigation">
+            <li><a href="chamber.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
     <main>
@@ -105,9 +105,6 @@
             <section class="card weather-info">
                 <a class="weatherwidget-io" href="https://forecast7.com/en/7d494d55/ife/" data-label_1="Ife"
                     data-days="3" data-theme="original">Ife</a>
-                <script>
-                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-                </script>
             </section>
         </div>
     </main>
@@ -130,7 +127,9 @@
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
     </footer>
     <script src="scripts/chamber-scripts.js"></script>
-    <script async src="https://app1.weatherwidget.org/js/?id=ww_a29e31c04c12a"></script>
+    <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+    </script>
 
 </body>
 

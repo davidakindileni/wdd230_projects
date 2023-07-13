@@ -31,25 +31,25 @@ modeButton.addEventListener("click", () => {
 });
 
 // Check if both passwords match //
-const upwd1 = document.querySelector("#usrpwd1");
-const upwd2 = document.querySelector("#usrpwd2");
+const pwd1 = document.querySelector("#password");
+const pwd2 = document.querySelector("#password2");
 const message = document.querySelector("#formmessage");
 
-upwd2.addEventListener("focusout", checkSame);
+pwd2.addEventListener("focusout", checkSame);
 
+// This should be refactored.
 function checkSame() {
-  if (upwd1.value !== upwd2.value) {
-    message.textContent = "❗The passwords DO NOT MATCH!";
+  if (pwd1.value !== pwd2.value) {
+    message.textContent = "❗Passwords DO NOT MATCH!";
     message.style.visibility = "show";
-    message.style.display = "initial";
-    upwd1.style.backgroundColor = "#fff0f3";
-    upwd1.value = "";
-    upwd2.value = "";
-    upwd1.focus();
+    pwd1.style.backgroundColor = "#fff0f3";
+    pwd1.value = "";
+    pwd2.value = "";
+    pwd1.focus();
   } else {
     message.style.display = "none";
-    /* upwd2.style.backgroundColor = "#fff";
-    upwd2.style.color = "#000"; */
+    pwd1.style.backgroundColor = "#bcb382";
+    pwd1.style.color = "rgba(0, 0, 0, 0.7)";
   }
 }
 
@@ -64,3 +64,11 @@ range.addEventListener("input", displayRatingValue);
 function displayRatingValue() {
   rangevalue.innerHTML = range.value;
 }
+
+// check and highlight active nav link
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active");
+  }
+});

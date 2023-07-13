@@ -48,7 +48,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li:first-child a {
+/* nav ul li:first-child a {
   background-color: #2d4739;
   color: #fff;
 }
@@ -57,6 +57,7 @@ nav ul li:first-child a:hover {
   background-color: #fff;
   color: #2d4739;
 }
+*/
 
 nav a {
   display: block;
@@ -71,7 +72,7 @@ nav a:hover,
   color: #09814a;
 }
 
-.active {
+.navigation li .active {
   color: yellow;
 }
 

@@ -11,14 +11,11 @@ html {
   box-sizing: border-box;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  max-width: 400px;
-  box-sizing: border-box;
-  place-items: center;
+:root {
+  --input-initial: rgba(0, 0, 0, 0.1);
+  --input-color: #555;
+  --input-valid: #bcb382;
 }
-*/
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -54,7 +51,7 @@ header {
 }
 
 nav {
-  background-color: #bcb382;
+  background-color: var(--input-valid);
   margin: 10px 0;
 }
 
@@ -62,7 +59,7 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li:first-child a {
+/* nav ul li:first-child a {
   background-color: #2d4739;
   color: #fff;
 }
@@ -71,6 +68,7 @@ nav ul li:first-child a:hover {
   background-color: #fff;
   color: #2d4739;
 }
+*/
 
 nav a {
   display: block;
@@ -85,7 +83,7 @@ nav a:hover,
   color: #09814a;
 }
 
-.active {
+.navigation li .active {
   color: yellow;
 }
 
@@ -119,6 +117,7 @@ nav a:hover,
 .navigation li {
   display: none;
 }
+
 .navigation li a {
   display: block;
   padding: 1rem;
@@ -175,16 +174,10 @@ footer {
 
 #formmessage {
   visibility: none;
-  display: none;
-  margin-top: 5rem;
+  margin-top: 0.75rem;
   padding: 0.5rem;
   color: red;
 }
-
-/* #usrpwd1:invalid {
-  background-color: #fff0f3;
-  animation: shaketext 500ms;
-} */
 
 .smaller {
   font-size: 11px;
@@ -204,22 +197,6 @@ footer {
   75% {
     transform: translateX(3px);
   }
-}
-
-#pagerating {
-  width: 190px;
-  margin-bottom: 0;
-  padding-top: 1rem;
-}
-
-#rangevalues {
-  display: flex;
-  margin: 0;
-  width: 200px;
-}
-
-#rangevalues option {
-  flex: 1 1 auto;
 }
 
 form fieldset {
@@ -272,31 +249,33 @@ form label.rng input {
 }
 
 #pagerating {
-  padding: 0;
+  width: 190px;
+  margin-bottom: 0;
 }
 
 #rangevalues {
-  margin-top: 0.5rem;
+  display: flex;
+  margin: 0;
+  padding-top: 0.5rem;
+  width: 200px;
 }
 
-form label.top input,
-form label.top select {
+#rangevalues option {
+  flex: 1 1 auto;
+}
+
+form label.top input {
   -webkit-appearance: none;
   display: block;
   font-size: 1rem;
   border: 1px solid #999;
   border-radius: 4px;
   padding: 0.75rem;
-  color: #555;
+  color: var(--input-color);
   width: 100%;
   max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-form label.sbs {
-  display: block;
-  padding: 0.75rem 0;
-  color: #555;
+  background-color: var(--input-initial);
+  font-weight: bold;
 }
 
 form input.submitBtn {
@@ -320,9 +299,8 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
-  background-color: #bcb382;
-  color: black;
-  opacity: 0.7;
+  background-color: var(--input-valid);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /* Record Page  *********************/
@@ -344,6 +322,11 @@ form label.top input:required:valid {
     max-width: 720px;
   }
 
+  header {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
   header img,
   header h1 {
     margin: 0;
@@ -351,11 +334,6 @@ form label.top input:required:valid {
 
   .my-name {
     padding-left: 40px;
-  }
-
-  header {
-    justify-content: center;
-    margin-top: 20px;
   }
 
   nav ul {

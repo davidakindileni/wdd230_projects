@@ -14,33 +14,45 @@ hamButton.addEventListener("click", () => {
   hamButton.classList.toggle("open");
 });
 
-// get number of days since last visit
-// 1️⃣ Initialize display element variable
-const lastVisit = document.querySelector(".lastVisit");
-const lastVisitDate = window.localStorage.getItem("storedLastVisit");
+if (window.location.pathname == "/chamber/discover.html") {
+  // get number of days since last visit
+  // 1️⃣ Initialize display element variable
+  const lastVisit = document.querySelector(".lastVisit");
+  const lastVisitDate = window.localStorage.getItem("storedLastVisit");
 
-if (lastVisitDate == null) {
-  // consider first visit
-  lastVisit.textContent = `Welcome! 🥳 Let us know if you have any questions.`;
-  localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
-} else {
-  const lastVisited = localStorage.getItem("storedLastVisit");
-  // your logic to calculate days based on format stored.
-  // const lastDate = JSON.parse(lastVisited); //
-  lastDate = Date.parse(JSON.parse(lastVisited));
-  const currentDate = new Date();
-  const nowDate = Date.parse(currentDate);
-  const difference = nowDate - lastDate;
-  const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+  if (lastVisitDate == null) {
+    // consider first visit
+    lastVisit.textContent = `Welcome! 🥳 Let us know if you have any questions.`;
+    localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
+  } else {
+    const lastVisited = localStorage.getItem("storedLastVisit");
+    // your logic to calculate days based on format stored.
+    // const lastDate = JSON.parse(lastVisited); //
+    lastDate = Date.parse(JSON.parse(lastVisited));
+    const currentDate = new Date();
+    const nowDate = Date.parse(currentDate);
+    const difference = nowDate - lastDate;
+    const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
 
-  if (differenceInDays < 1) {
-    lastVisit.textContent = `Back so soon! Awesome!`;
-  } else if (differenceInDays == 1) {
-    lastVisit.textContent = `You last visted ` + differenceInDays + ` day ago`;
+    if (differenceInDays < 1) {
+      lastVisit.textContent = `Back so soon! Awesome!`;
+    } else if (differenceInDays == 1) {
+      lastVisit.textContent =
+        `You last visted ` + differenceInDays + ` day ago`;
+    }
+    if (differenceInDays > 1) {
+      lastVisit.textContent =
+        `You last visted ` + differenceInDays + ` days ago`;
+    }
+
+    localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
   }
-  if (differenceInDays > 1) {
-    lastVisit.textContent = `You last visted ` + differenceInDays + ` days ago`;
-  }
-
-  localStorage.setItem("storedLastVisit", JSON.stringify(new Date()));
 }
+
+// check and highlight active nav link
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+  if (link.href.includes(`${activePage}`)) {
+    link.classList.add("active");
+  }
+});

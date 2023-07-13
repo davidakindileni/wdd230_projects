@@ -37,8 +37,8 @@
         <button id="menu" title="Menu button"></button>
         <ul class="navigation">
             <li><a href="index.html">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/chamber.html" target="_blank">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html" target="_blank">Site Plan</a></li>
             <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
@@ -49,15 +49,16 @@
                 <legend>Your Details </legend>
                 <p class="smaller"><span class="reqd-note">*</span> Indicates a required field</p>
                 <label class="top"> Username* <input type="text" name="username" id="username" autofocus
+                        autocomplete="on" required></label>
+                <label class="top"> Password* <input type="password" id="password" name="password"
+                        pattern="[A-Za-z0-9]{8,}" placeholder="letters, numbers and at least 8 characters"
                         required></label>
-                <label class="top"> Password* <input type="password" name="password1" id="usrpwd1"
-                        placeholder="letters, numbers and at least 8 characters" pattern="[A-Za-z0-9]{8,}"
+                <label class="top"> Confirm Password* <input type="password" id="password2" name="password2"
+                        pattern="[A-Za-z0-9]{8,}" placeholder="letters, numbers and at least 8 characters"
                         required></label>
-                <label class="top"> Confirm Password* <input type="password" name="password2" id="usrpwd2"
-                        placeholder="letters, numbers and at least 8 characters" pattern="[A-Za-z0-9]{8,}"
+                <label class="top"> Email* <input type="email" name="email" id="emailAddress"
+                        title="Please enter a valid email address" pattern=".+@byui\.edu" autocomplete="on"
                         required></label>
-                <label class="top"> Email* <input type="email" name="email" id="usremail"
-                        title="Please enter a valid email address" pattern=".+@byui\.edu" required></label>
                 <label class="rng">Page Rating <div class="rating-display"><input type="range" id="pagerating"
                             name="pagerating" min="1" max="10" value="1" step="1" list="rangevalues">
                         <div id="ratingvalue">0</div>
