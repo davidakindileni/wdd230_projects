@@ -184,7 +184,7 @@ footer {
   position: relative;
   padding-bottom: 0.75rem;
   margin: 0;
-  color: #9c2c13;
+  color: #681e0d;
 }
 
 @keyframes shaketext {
@@ -201,13 +201,13 @@ footer {
 
 form fieldset {
   margin: 1rem 0;
-  border: 1px solid #445ba9;
+  border: 1px solid #1a3c42;
   border-radius: 10px;
   padding: 0.5rem 2%;
 }
 
 form legend {
-  color: #445ba9;
+  color: #1a3c42;
   margin: 0 1rem;
   padding: 0 0.5rem;
 }
@@ -215,7 +215,7 @@ form legend {
 form label.top {
   display: block;
   padding-top: 1rem;
-  color: #9c2c13;
+  color: #681e0d;
   font-size: 0.8rem;
   width: 100%;
 }
@@ -223,7 +223,7 @@ form label.top {
 form label.rng {
   display: block;
   padding-top: 1rem;
-  color: #9c2c13;
+  color: #681e0d;
   font-size: 0.8rem;
 }
 
@@ -278,7 +278,7 @@ form label.top input {
 
 form input.submitBtn {
   border: none;
-  background-color: #9c2c13;
+  background-color: #681e0d;
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
