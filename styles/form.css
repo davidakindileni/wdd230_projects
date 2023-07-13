@@ -173,7 +173,7 @@ footer {
 /* Form Design *********************/
 
 #formmessage {
-  visibility: none;
+  visibility: hidden;
   margin-top: 0.75rem;
   padding: 0.5rem;
   color: red;
