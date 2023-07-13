@@ -212,6 +212,10 @@ main ul {
   line-height: 2.5;
 }
 
+.det {
+  margin-top: 2rem;
+  text-align: center;
+}
 footer {
   display: block;
   margin-top: 20px;
