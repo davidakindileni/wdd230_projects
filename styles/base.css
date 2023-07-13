@@ -242,7 +242,7 @@ footer {
 @media screen and (min-width: 401px) {
   * {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 760px;
   }
 
   header img,

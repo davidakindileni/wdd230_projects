@@ -236,19 +236,17 @@ form label.rng input {
   margin: 0;
 }
 
-.rating-display {
-  display: flex;
-}
-
 #ratingvalue {
-  margin: 0.2rem 0 0;
-  padding: 0 3rem;
+  position: absolute;
+  margin-top: 0.8rem;
+  padding-left: 10.8rem;
   color: black;
   font-size: 1rem;
   font-weight: bold;
 }
 
 #pagerating {
+  display: block;
   width: 190px;
   margin-bottom: 0;
 }
@@ -319,7 +317,7 @@ form label.top input:required:valid {
 @media screen and (min-width: 401px) {
   * {
     margin: 0 auto;
-    max-width: 720px;
+    max-width: 760px;
   }
 
   header {
