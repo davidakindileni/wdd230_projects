@@ -39,7 +39,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
+            <li><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <main>
@@ -47,17 +47,22 @@
         <form method="get" action="record.html">
             <fieldset>
                 <legend>Your Details </legend>
-                <label class="top"> Username* <input type="text" name="fname" id="username" required></label>
+                <p class="smaller"><span class="reqd-note">*</span> Indicates a required field</p>
+                <label class="top"> Username* <input type="text" name="username" id="username" autofocus
+                        required></label>
                 <label class="top"> Password* <input type="password" name="password1" id="usrpwd1"
-                        pattern="[A-Za-z0-9]{8,}" required></label>
+                        placeholder="letters, numbers and at least 8 characters" pattern="[A-Za-z0-9]{8,}"
+                        required></label>
                 <label class="top"> Confirm Password* <input type="password" name="password2" id="usrpwd2"
                         placeholder="letters, numbers and at least 8 characters" pattern="[A-Za-z0-9]{8,}"
                         required></label>
                 <label class="top"> Email* <input type="email" name="email" id="usremail"
-                        placeholder="Please enter a valid email address" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                        required></label>
-                <label class="rng"><input type="range" id="pagerating" name="r" min="1" max="10" value="1" step="1"
-                        list="rangevalues"></label>
+                        title="Please enter a valid email address" pattern=".+@byui\.edu" required></label>
+                <label class="rng">Page Rating <div class="rating-display"><input type="range" id="pagerating"
+                            name="pagerating" min="1" max="10" value="1" step="1" list="rangevalues">
+                        <div id="ratingvalue">0</div>
+                    </div>
+                </label>
                 <datalist id="rangevalues">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -70,6 +75,7 @@
                     <option value="9">9</option>
                     <option value="10">10</option>
                 </datalist>
+
             </fieldset>
             <input class="submitBtn" type="submit" value="Join the Chamber">
         </form>

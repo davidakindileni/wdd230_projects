@@ -37,18 +37,30 @@ const message = document.querySelector("#formmessage");
 
 upwd2.addEventListener("focusout", checkSame);
 
-// This should be refactored.
 function checkSame() {
   if (upwd1.value !== upwd2.value) {
     message.textContent = "❗The passwords DO NOT MATCH!";
     message.style.visibility = "show";
+    message.style.display = "initial";
     upwd1.style.backgroundColor = "#fff0f3";
     upwd1.value = "";
     upwd2.value = "";
     upwd1.focus();
   } else {
     message.style.display = "none";
-    upwd2.style.backgroundColor = "#fff";
-    upwd2.style.color = "#000";
+    /* upwd2.style.backgroundColor = "#fff";
+    upwd2.style.color = "#000"; */
   }
+}
+
+// Display the RANGE
+const rangevalue = document.getElementById("ratingvalue");
+const range = document.getElementById("pagerating");
+
+// RANGE event listener
+range.addEventListener("change", displayRatingValue);
+range.addEventListener("input", displayRatingValue);
+
+function displayRatingValue() {
+  rangevalue.innerHTML = range.value;
 }

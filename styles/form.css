@@ -175,14 +175,23 @@ footer {
 
 #formmessage {
   visibility: none;
-  margin: 10px;
+  display: none;
+  margin-top: 5rem;
   padding: 0.5rem;
   color: red;
 }
 
-#usrpwd1:invalid {
+/* #usrpwd1:invalid {
   background-color: #fff0f3;
   animation: shaketext 500ms;
+} */
+
+.smaller {
+  font-size: 11px;
+  position: relative;
+  padding-bottom: 0.75rem;
+  margin: 0;
+  color: #9c2c13;
 }
 
 @keyframes shaketext {
@@ -198,13 +207,14 @@ footer {
 }
 
 #pagerating {
-  width: 180px;
+  width: 190px;
   margin-bottom: 0;
+  padding-top: 1rem;
 }
 
 #rangevalues {
   display: flex;
-  margin: 0 0 0 25px;
+  margin: 0;
   width: 200px;
 }
 
@@ -212,9 +222,8 @@ footer {
   flex: 1 1 auto;
 }
 
-/*----------- FORM --------------*/
 form fieldset {
-  margin: 2rem 0;
+  margin: 1rem 0;
   border: 1px solid #445ba9;
   border-radius: 10px;
   padding: 0.5rem 2%;
@@ -226,12 +235,48 @@ form legend {
   padding: 0 0.5rem;
 }
 
-form label.top,
-form div {
+form label.top {
   display: block;
   padding-top: 1rem;
   color: #9c2c13;
   font-size: 0.8rem;
+  width: 100%;
+}
+
+form label.rng {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 0.8rem;
+}
+
+form label.rng input {
+  display: block;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 20rem;
+  padding: 0;
+  margin: 0;
+}
+
+.rating-display {
+  display: flex;
+}
+
+#ratingvalue {
+  margin: 0.2rem 0 0;
+  padding: 0 3rem;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#pagerating {
+  padding: 0;
+}
+
+#rangevalues {
+  margin-top: 0.5rem;
 }
 
 form label.top input,
@@ -260,7 +305,7 @@ form input.submitBtn {
   color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
-  margin: 0 0 2rem 2%;
+  margin: 0 0 1rem 2%;
   width: 96%;
   max-width: 20rem;
 }
@@ -275,6 +320,9 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+  background-color: #bcb382;
+  color: black;
+  opacity: 0.7;
 }
 
 /* Record Page  *********************/
