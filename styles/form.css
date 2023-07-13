@@ -264,6 +264,7 @@ form label.rng input {
 
 form label.top input {
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   font-size: 1rem;
   border: 1px solid #999;
