@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A. David Akindileni - WDD 230 - Web Frontend Development - Chamber of Commerce Join Page</title>
+    <meta name="description" content="WDD230 - Akinsola David Akindileni - Chamber of Commerce Join Page">
+    <meta name="author" content="A. David Akindileni">
+
+    <!--  Essential META Tags -->
+    <meta property="og:image" content="https://davidakindileni.github.io/wdd230/images/ile-ife.webp">
+    <meta property="og:title" content="Ile-Ife Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Ile-Ife Chamber of Commerce Join Page">
+    <meta property="fb:app_id" content="668803648031186">
+    <meta property="og:url" content="https://davidakindileni.github.io/wdd230/index.html">
+
+    <link rel="icon" href="ife-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&20display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+</head>
+
+<body id="join">
+    <header>
+        <img class="logo-img" src="images/ile-ife.webp" alt="ori-olokun-pic">
+        <h1 class="page-name">Ile-Ife Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="chamber.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <img class="city-photo" src="images/foto-ori-olokun.webp" alt="ori-olokun-pic" loading="lazy" width="800"
+            height="300">
+        <div class="form-container">
+            <h1 class="pg-title">Welcome to our Chamber!</h1>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>New Member Details </legend>
+                    <p class="smaller"><span class="reqd-note">*</span> Indicates a required field</p>
+                    <label class="top"> First name<span class="reqd-note">*</span> <input type="text" name="firstname"
+                            id="firstname" autofocus autocomplete="on" required></label>
+                    <label class="top"> Last name<span class="reqd-note">*</span> <input type="text" name="lastname"
+                            id="lastname" autocomplete="on" required></label>
+                    <label class="top"> Your title or position <input type="text" name="title" id="title"
+                            pattern="A-Za-z-{7, }" autocomplete="on"></label>
+                    <label class="top"> Email<span class="reqd-note">*</span> <input type="email" name="email"
+                            id="emailaddress" title="Please enter your business email address"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" autocomplete="on" required></label>
+                    <label class="top"> Mobile Phone<span class="reqd-note">*</span> <input type="tel" name="phone"
+                            autocomplete="on" required placeholder="08031235551"></label>
+                    <label class="top"> Organization name<span class="reqd-note">*</span> <input type="text"
+                            name="organization" id="organization" autocomplete="on" required></label>
+                    <div class="top">Membership Levels<span class="reqd-note">*</span> <span class="mbr-note"> (select
+                            your desired membership
+                            category)</span>
+                    </div>
+                    <label class="mbr"><input type="radio" name="membrlvl" value="nonprofit"> Non-Profit</label>
+                    <label class="mbr"><input type="radio" name="membrlvl" value="bronze"> Bronze</label>
+                    <label class="mbr"><input type="radio" name="membrlvl" value="silver"> Silver</label>
+                    <label class="mbr"><input type="radio" name="membrlvl" value="gold"> Gold</label>
+                    <label class="top"> Organization Description <input type="text" name="orgdescription"
+                            id="orgdescription" autocomplete="on"></label>
+                    <label class="top"><input type="timestamp" name="timestamp" step="1"></label>
+
+
+                </fieldset>
+                <input class="submitBtn" type="submit" value="Join the Chamber">
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <img class="footer-img" src="images/ile-ife.webp" loading="lazy" width="200" height="200" alt="footer-ife-img">
+        <p class="footer-addr">Contact address: <br>112 Lalupon Avenue, Ile-Ife, <br class="sm-scr"> Osun State, Nigeria
+        </p>
+        <div class="footer-icons">
+            <a href="#"><img class="soc-med-icons" src="images/fb-2.webp" loading="lazy" width="128" height="128"
+                    alt="FB icon"></a>
+            <a href="#"><img class="soc-med-icons" src="images/tw-2.webp" loading="lazy" width="128" height="128"
+                    alt="TW icon"></a>
+            <a href="#"><img class="soc-med-icons" src="images/linkedin-1.webp" loading="lazy" width="128" height="128"
+                    alt="In icon"></a>
+            <a href="#"><img class="soc-med-icons" src="images/yt-1.webp" loading="lazy" width="128" height="128"
+                    alt="YT icon"></a>
+            <a href="#"><img class="soc-med-icons" src="images/inst-1.webp" loading="lazy" width="128" height="128"
+                    alt="IN icon"></a>
+        </div>
+        <p class="footer-info">&copy; <span id="currentyear"></span> Ile-Ife Chamber &nbsp;&nbsp;<span class="bg-scr"> |
+            </span><br class="sm-scr">&nbsp;&nbsp;
+            Akinsola David Akindileni &nbsp;&nbsp;<span class="bg-scr"> | </span><br class="sm-scr">&nbsp;&nbsp; WDD230
+            Spring 2023 Project</p>
+        <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
+    </footer>
+    <script src="scripts/chamber-scripts.js"></script>
+
+</body>
+
+</html>
