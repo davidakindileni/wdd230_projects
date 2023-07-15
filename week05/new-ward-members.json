@@ -1,0 +1,28 @@
+{
+  "familyName": "Ansah",
+  "movedInDate": "2015-03-24",
+  "numberInFamily": 4,
+  "visitedByBishop": true,
+  "familyMembers": [
+    {
+      "name": "Felix Ansah",
+      "gender": "male",
+      "birthDate": "1971-01-28"
+    },
+    {
+      "name": "Joy Ansah",
+      "gender": "female",
+      "birthDate": "1982-12-24"
+    },
+    {
+      "name": "Kofi Ansah",
+      "gender": "male",
+      "birthDate": "2013-05-13"
+    },
+    {
+      "name": "Nanaya Ansah",
+      "gender": "female",
+      "birthDate": "2016-04-22"
+    }
+  ]
+}
