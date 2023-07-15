@@ -32,7 +32,7 @@ modeButton.addEventListener("click", () => {
 
 // check and highlight active nav link
 const activePage = window.location.pathname;
-const navLinks = document.querySelectorAll("nav a").forEach((link) => {
+const navLinks = document.querySelectorAll("navigation a").forEach((link) => {
   if (link.href.includes(`${activePage}`)) {
     link.classList.add("active");
   }
