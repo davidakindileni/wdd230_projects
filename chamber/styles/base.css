@@ -1,4 +1,4 @@
-/* General styles for index  and chamber pages */
+/* General styles for all pages */
 
 * {
   margin: 0;
@@ -74,6 +74,12 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
+.city-photo {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
 footer {
   display: block;
   width: 90vw;
@@ -123,9 +129,38 @@ footer {
   color: #b2ff00;
 }
 
-/* Styles for index.html */
+/* small view navigation */
+#menu {
+  font-size: 1.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 3px 7px 6px;
+  background-color: #eee;
+  color: #000;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
 
-.our-info h2 {
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "❌";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+  display: block;
+  width: 100%;
+}
+.open li a {
+  display: block;
+}
+
+/* Styles for chamber.html */
+
+#chamber .our-info h2 {
   margin-top: 15px;
   margin-bottom: 0px;
   color: blue;
@@ -158,7 +193,7 @@ footer {
   font-weight: bold;
 }
 
-.weather-info {
+#chamber .weather-info {
   width: 90vw;
   border: none;
 }
@@ -169,17 +204,11 @@ footer {
   text-align: center;
 }
 
-.tagline {
+#chamber .tagline {
   font-style: italic;
 }
 
-.city-photo {
-  width: 100%;
-  height: auto;
-  opacity: 0.8;
-}
-
-.join-button {
+#chamber .join-button {
   display: block;
   width: 100%;
   max-width: 120px;
@@ -196,38 +225,9 @@ footer {
   font-weight: bold;
 }
 
-.join-button a:hover {
+#chamber .join-button a:hover {
   background-color: #acc8e5;
   color: #112a46;
-}
-
-/* small view navigation */
-#menu {
-  font-size: 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 3px 7px 6px;
-  background-color: #eee;
-  color: #000;
-  position: absolute;
-  top: 0.5rem;
-  right: 1rem;
-}
-
-#menu::before {
-  content: "☰";
-}
-
-#menu.open::before {
-  content: "❌";
-}
-
-/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
-.open li {
-  display: block;
-  width: 100%;
-}
-.open li a {
-  display: block;
 }
 
 /* Styles for discover.html */
@@ -284,7 +284,7 @@ footer {
   text-align: center;
 }
 
-.places-img {
+#discover .places-img {
   width: 100%;
   height: auto;
 }
@@ -328,9 +328,16 @@ footer {
   background-color: var(--back);
   color: #fff;
   max-width: 760px;
+  font-size: 1.5rem;
 }
+
+#join .bg-scr {
+  display: none;
+}
+
 #join .form-container {
   align-items: center;
+  display: block;
 }
 
 #join .smaller {
@@ -443,11 +450,10 @@ footer {
   padding: 0.5rem 0;
 }
 
-/* Styles for base.css */
-
 /* Larger screen views *********************/
 
 @media screen and (min-width: 421px) {
+  /* General for all settings */
   * {
     margin: 0 auto;
     max-width: 90vw;
@@ -648,19 +654,97 @@ footer {
 
   /* for Join Page */
 
-  #join form * {
-    max-width: 760px;
+  #join .card {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+    padding-top: 5px;
+    height: 100%;
+    font-size: 0.8rem;
   }
-
-  #join form .mbr {
-    padding: 0.5rem 0;
+  #join .bg-scr {
+    display: initial;
   }
 
   #join form label.mbr {
     padding: 0.4rem 0;
   }
 
-  /* for both Chamber Home and Discover Pages */
+  #join .form-container {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    grid-template-rows: 100px;
+    grid-auto-rows: (auto-fit, 180px);
+    height: 100%;
+    grid-gap: 1rem;
+  }
+
+  #join .current-events-hdr {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    height: auto;
+    max-height: 180px;
+    background-color: #001f3f;
+    color: #fff;
+  }
+
+  legend {
+    margin: 0;
+    padding: 0;
+  }
+  #join .pg-title {
+    grid-column: 7 / 10;
+    grid-row: 1 / 2;
+    padding: 0;
+    margin: 0;
+  }
+
+  #join .mbr-benefits {
+    padding: 0.75rem 0 0 15px;
+  }
+
+  #join .mbr-benefits li {
+    padding-bottom: 0.5rem;
+  }
+
+  #join #card01 {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  #join #card02 {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  #join #card03 {
+    grid-column: 4 / 6;
+    grid-row: 2 / 3;
+  }
+
+  #join #card04 {
+    grid-column: 4 / 6;
+    grid-row: 3 / 4;
+  }
+
+  #join .join-form {
+    grid-column: 7 / 10;
+    grid-row: 2 / 7;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* for all Pages */
+  .email,
+  .phone,
+  .card04 a {
+    margin: 0 auto;
+    text-align: center;
+  }
+
   footer {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -685,13 +769,6 @@ footer {
 
   .bg-scr {
     display: initial;
-  }
-
-  .email,
-  .phone,
-  .card04 a {
-    margin: 0 auto;
-    text-align: center;
   }
 
   .footer-img {

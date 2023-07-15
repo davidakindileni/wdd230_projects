@@ -43,8 +43,81 @@
         <img class="city-photo" src="images/foto-ori-olokun.webp" alt="ori-olokun-pic" loading="lazy" width="800"
             height="300">
         <div class="form-container">
+            <h2 class="current-events-hdr bg-scr">Membership Level Details</h2>
+            <section class="card bg-scr" id="card01">
+                <h3>Non-Profit membership</h3>
+                <hr class="hr-top">
+                <ul class="mbr-benefits">
+                    <li>
+                        Annual fees: Free of charge (FOC)
+                    </li>
+                    <li>
+                        For non-profit organizations only
+                    </li>
+                    <li>
+                        Proof of non-profit status required
+                    </li>
+                    <li>
+                        All membership benefits
+                    </li>
+                </ul>
+            </section>
+            <section class="card bg-scr" id="card02">
+                <h3>Bronze membership</h3>
+                <hr class="hr-top">
+                <ul class="mbr-benefits">
+                    <li>
+                        Annual fees: US$500
+                    </li>
+                    <li>
+                        Automatic subscription to Chamber's update emails and monthly Newsletter
+                    </li>
+                    <li>
+                        Attendance at Chamber's city monthly meetings
+                    </li>
+                    <li>
+                        25% discount of local seminars and workshops
+                    </li>
+                </ul>
+            </section>
+            <section class="card bg-scr" id="card03">
+                <h3>Silver membership</h3>
+                <hr class="hr-top">
+                <ul class="mbr-benefits">
+                    <li>
+                        Annual fees: US$750
+                    </li>
+                    <li>
+                        All privileges of Bronze except as noted here
+                    </li>
+                    <li>
+                        35% discount of local seminars and workshops
+                    </li>
+                    <li>
+                        20% discount of state seminars and workshops
+                    </li>
+                </ul>
+            </section>
+            <section class="card bg-scr" id="card04">
+                <h3>Gold Membership</h3>
+                <hr class="hr-top">
+                <ul class="mbr-benefits">
+                    <li>
+                        Annual fees: US$1000
+                    </li>
+                    <li>
+                        All privileges of Bronze except as noted here
+                    </li>
+                    <li>
+                        50% discount of local seminars and workshops
+                    </li>
+                    <li>
+                        40% discount of state seminars and workshops
+                    </li>
+                </ul>
+            </section>
             <h1 class="pg-title">Welcome to our Chamber!</h1>
-            <form method="get" action="thankyou.html">
+            <form class="join-form" method="get" action="thankyou.html">
                 <fieldset>
                     <legend>New Member Details </legend>
                     <p class="smaller"><span class="reqd-note">*</span> Indicates a required field</p>
@@ -71,12 +144,11 @@
                     <label class="mbr"><input type="radio" name="membrlvl" value="gold"> Gold</label>
                     <label class="top"> Organization Description <input type="text" name="orgdescription"
                             id="orgdescription" autocomplete="on"></label>
-                    <label class="top"><input type="timestamp" name="timestamp" step="1"></label>
-
-
+                    <label><input type="hidden" name="timeStampID" id="timeStamp"></label>
                 </fieldset>
                 <input class="submitBtn" type="submit" value="Join the Chamber">
             </form>
+
         </div>
 
     </main>
