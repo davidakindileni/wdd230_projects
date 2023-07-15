@@ -405,6 +405,7 @@ footer {
 #join .mbr-note {
   font-size: 0.7rem;
   font-style: italic;
+  color: #000;
 }
 #join form label.mbr {
   display: block;
