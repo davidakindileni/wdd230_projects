@@ -1,5 +1,13 @@
 body main h1 {
   border-bottom: 2px solid blue;
+  text-shadow: 0 0 15px #777;
+
   width: 40%;
   text-shadow: 1px 1px 5px lightblue;
+}
+
+body {
+  width: 60vw;
+  align-items: center;
+  margin: 0 auto;
 }
