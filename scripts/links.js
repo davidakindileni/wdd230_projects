@@ -10,6 +10,5 @@ async function getLinks() {
     console.log("data.week", data.week);
     console.log("data.weeks", data.weeks);
     console.log("data.weeks.week", data.weeks.week);
-    displayLinks(data);
   }
 }
