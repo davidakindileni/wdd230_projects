@@ -7,8 +7,15 @@ async function getLinks() {
   if (response.ok) {
     const data = await response.json();
     console.log(data);
-    // displayLinks(data.weeks);
+    displayLinks(data.weeks);
   }
 }
+
+const displayLinks = (weeks) => {
+  console.log("weeks", weeks);
+  console.log("weeks.week", weeks.week);
+  console.log("data.weeks", data.weeks);
+  console.log("data.weeks.week", data.weeks.week);
+};
 
 // getLinks();
