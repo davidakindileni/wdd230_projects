@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body main h1 {
   border-bottom: 2px solid blue;
   text-shadow: 0 0 15px #777;
@@ -10,4 +15,8 @@ body {
   width: 60vw;
   align-items: center;
   margin: 0 auto;
+}
+
+figure {
+  display: flex;
 }
