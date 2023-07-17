@@ -21,7 +21,8 @@ fetch(linksURL)
       // loop through the links in each week concatenating the links
       for (let j = 0; j < links.length; j++) {
         weekLinks =
-          weekLinks + `<a href="${links[j]["url"]}">${links[j]["title"]}</a>`;
+          weekLinks +
+          `<a href="${links[j]["url"]}" target="_blank"></a>${links[j]["title"]}</a>`;
         if (j < links.length - 1) {
           weekLinks = weekLinks + ` | `;
         }
