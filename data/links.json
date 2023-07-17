@@ -78,6 +78,24 @@
           "title": "Weather API"
         }
       ]
+    },
+    {
+      "week": "Week 6",
+      "links": [
+        {
+          "url": "#",
+          "title": "Week 06"
+        }
+      ]
+    },
+    {
+      "week": "Week 7",
+      "links": [
+        {
+          "url": "#",
+          "title": "Week 07"
+        }
+      ]
     }
   ]
 }
