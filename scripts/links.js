@@ -22,7 +22,7 @@ fetch(linksURL)
       for (let j = 0; j < links.length; j++) {
         weekLinks =
           weekLinks +
-          `<a href="${links[j]["url"]}" target="_blank"></a>${links[j]["title"]}</a>`;
+          `<a href="${links[j]["url"]}"></a>${links[j]["title"]}</a>`;
         if (j < links.length - 1) {
           weekLinks = weekLinks + ` | `;
         }
