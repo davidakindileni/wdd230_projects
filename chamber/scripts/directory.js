@@ -2,61 +2,80 @@ const baseURL = "https://davidakindileni.github.io/wdd230/";
 const linksURL =
   "https://davidakindileni.github.io/wdd230/chamber/data/members.json";
 
+// const linksURL = "./data/members.json";
+
 const cards = document.querySelector("#cards");
 
 async function getMembersData() {
-  const response = await fetch(url);
+  const response = await fetch(linksURL);
   //check to see if the fetch was successful
   if (response.ok) {
-    // the API will send us JSON...but we have to convert the response before we can use it
-    // .json() also returns a promise...so we await it as well.
     const data = await response.json();
     displayMembers(data.members);
   }
 }
 
-const displayMemberss = (memberss) => {
-  // card build code goes here
-  /* const cards = document.querySelector("div.cards"); */
-  prophets.forEach((prophet) => {
+const displayMembers = (members) => {
+  members.forEach((member) => {
     let card = document.createElement("section");
     let cardbody = document.createElement("div");
-    let fullName = document.createElement("h2");
-    let birthDate = document.createElement("p");
-    let birthPlace = document.createElement("p");
-    let portrait = document.createElement("img");
+    let companyName = document.createElement("h2");
+    let companyImage = document.createElement("img");
+    let address = document.createElement("p");
+    let phone = document.createElement("p");
+    let website = document.createElement("a");
+    let memberLevel = document.createElement("p");
+    let dateJoined = document.createElement("p");
+    let active = document.createElement("p");
 
     card.setAttribute("class", "card");
     // Build the h2 content out to show the prophet's full name
-    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-
-    birthDate.innerText = `Date of Birth: ${prophet.birthdate}`;
-    birthDate.setAttribute("class", "card-text");
-
-    birthPlace.innerText = `Place of Birth: ${prophet.birthplace}`;
-    birthPlace.setAttribute("class", "card-text");
+    companyName.textContent = `${member.companyname}`;
 
     // Build the image portrait by setting all the relevant attributes
-    portrait.setAttribute("src", prophet.imageurl);
-    portrait.setAttribute(
-      "alt",
-      `Portrait of ${prophet.name} ${prophet.lastname}`
-    );
-    portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "340");
-    portrait.setAttribute("height", "440");
+    companyImage.setAttribute("src", member.imagefile);
+    companyImage.setAttribute("alt", `Image of ${member.companyname}`);
+    companyImage.setAttribute("loading", "lazy");
+    companyImage.setAttribute("width", "120");
+    companyImage.setAttribute("height", "100");
+
+    address.innerText = `${member.address}`;
+    address.setAttribute("class", "card-text");
+
+    phone.innerText = `${member.phone}`;
+    phone.setAttribute("class", "card-text");
+
+    website.innerText = `${member.website}`;
+    website.setAttribute("class", "card-text");
+
+    memberLevel.innerText = `${member.member_level}`;
+    memberLevel.setAttribute("class", "card-text");
+
+    dateJoined.innerText = `${member.date_joined}`;
+    dateJoined.setAttribute("class", "card-text");
+
+    if (member.active) {
+      active.innerText = `active`;
+    } else {
+      active.innerText = `not active`;
+    }
+    active.setAttribute("class", "card-text");
 
     // Append the card body with the created elements
-    cardbody.appendChild(birthDate);
-    cardbody.appendChild(birthPlace);
+    cardbody.appendChild(address);
+    cardbody.appendChild(phone);
+    cardbody.appendChild(website);
+    cardbody.appendChild(memberLevel);
+    cardbody.appendChild(dateJoined);
+    cardbody.appendChild(active);
 
     // Append the section(card) with the created elements
-    card.appendChild(fullName);
+    card.appendChild(companyName);
+    card.appendChild(companyImage);
     card.appendChild(cardbody);
-    card.appendChild(portrait);
 
     cards.appendChild(card);
   });
 };
 
-getProphetData().then((prophets) => displayProphets(prophets));
+getMembersData().then((members) => displayMembers(members));

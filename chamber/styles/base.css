@@ -36,7 +36,7 @@ header {
 }
 
 .page-name {
-  font-size: 6vw; /* 5vw */
+  font-size: 4vw; /* 5vw */
   color: #2b3a67;
   /* margin-top: 20px; */
   padding: 1rem 0 1rem;
@@ -292,6 +292,50 @@ footer {
 #discover #card10 {
   text-align: center;
   font-weight: bold;
+}
+
+/* Styles for directory.html */
+#directory h2 {
+  text-align: center;
+}
+#directory #cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 12px;
+  padding: 16px;
+  margin: 16px auto;
+}
+
+#directory #cards section {
+  margin: 0.25rem;
+  padding: 1rem 0.35rem 0.35rem 0.35rem;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#directory #cards section img {
+  width: auto;
+  max-width: 325px;
+  height: 200px;
+  border: 1px solid #333;
+  margin: 20px 0;
+}
+
+#directory #cards section > p {
+  min-height: 60px;
+  padding-bottom: 20px;
+}
+
+#directory .card-text {
+  text-align: center;
+  color: #011325;
+}
+
+#directory #cards a {
+  color: #000;
 }
 
 /* Styles for join.html */
