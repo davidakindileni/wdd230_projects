@@ -28,7 +28,7 @@
 <body id="directory">
     <header>
         <img class="logo-img" src="images/ile-ife.webp" alt="ori-olokun-pic">
-        <h1 class="page-name">Ile-Ife Chamber of Commerce</h1>
+        <h1 class="page-name">Ile-Ife Chamber of Commerce Directory</h1>
     </header>
     <nav>
         <button id="menu"></button>
@@ -40,6 +40,9 @@
         </ul>
     </nav>
     <main>
+        <div class="grid">
+            <div id="cards"></div>
+        </div>
     </main>
     <footer>
         <img class="footer-img" src="images/ile-ife.webp" alt="footer-ife-img">
@@ -60,9 +63,7 @@
         <div class="last-mod">Last Updated: <span id="lastmodified"></span></div>
     </footer>
     <script src="scripts/chamber-scripts.js"></script>
-    <script>
-        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-    </script>
+    <script src="scripts/directory.js"></script>
 
 </body>
 
