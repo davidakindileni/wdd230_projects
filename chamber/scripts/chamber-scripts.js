@@ -56,3 +56,16 @@ const navLinks = document.querySelectorAll("nav a").forEach((link) => {
     link.classList.add("active");
   }
 });
+
+// Banner page display and close
+const pgbnr = document.querySelector("#bnr");
+const pgclose = document.querySelector(".banner-close");
+const d = new Date();
+let day = d.getDay();
+if (day > 0 && day < 4) {
+  pgclose.addEventListener("click", function () {
+    this.closest(".banner").style.display = "none";
+  });
+} else {
+  pgbnr.style.display = "none";
+}
