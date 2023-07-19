@@ -608,7 +608,7 @@ footer {
   }
 
   #chamber .weather-info {
-    grid-column: 4 / 6;
+    grid-column: 2 / 8;
     grid-row: 6 / 7;
   }
 
