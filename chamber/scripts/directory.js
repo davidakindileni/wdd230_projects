@@ -2,8 +2,6 @@ const baseURL = "https://davidakindileni.github.io/wdd230/";
 const linksURL =
   "https://davidakindileni.github.io/wdd230/chamber/data/members.json";
 
-// const linksURL = "./data/members.json";
-
 const cards = document.querySelector("#cards");
 
 async function getMembersData() {

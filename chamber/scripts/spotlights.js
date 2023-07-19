@@ -1,7 +1,5 @@
-// const linksURL =
-"https://davidakindileni.github.io/wdd230/chamber/data/members.json";
-
-const linksURL = "./data/members.json";
+const linksURL =
+  "https://davidakindileni.github.io/wdd230/chamber/data/members.json";
 
 fetch(linksURL)
   .then(function (response) {
