@@ -25,6 +25,7 @@ const displayMembers = (members) => {
     let phone = document.createElement("p");
     let website = document.createElement("a");
     let email = document.createElement("p");
+    let tagline = document.createElement("p");
     let memberLevel = document.createElement("p");
     let dateJoined = document.createElement("p");
     let active = document.createElement("p");
@@ -52,6 +53,9 @@ const displayMembers = (members) => {
     email.innerText = `${member.email}`;
     email.setAttribute("class", "card-text");
 
+    tagline.innerText = `${member.tagline}`;
+    tagline.setAttribute("class", "card-text");
+
     memberLevel.innerText = `${member.member_level}`;
     memberLevel.setAttribute("class", "card-text");
 
@@ -70,6 +74,7 @@ const displayMembers = (members) => {
     cardbody.appendChild(phone);
     cardbody.appendChild(website);
     cardbody.appendChild(email);
+    cardbody.appendChild(tagline);
     cardbody.appendChild(memberLevel);
     cardbody.appendChild(dateJoined);
     cardbody.appendChild(active);

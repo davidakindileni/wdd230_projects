@@ -7,6 +7,7 @@
       "website": "https:/testweb.com",
       "email": "info.testweb.com",
       "imagefile": "https://picsum.photos/id/237/120/100",
+      "tagline": "It's all done with the best possible taste!",
       "member_level": "Silver",
       "date_joined": "2/4/2023",
       "active": true
@@ -18,6 +19,7 @@
       "website": "https:/testweb.com",
       "email": "customerservices@digitube.com",
       "imagefile": "https://picsum.photos/id/280/120/100",
+      "tagline": "You can't touch this!",
       "member_level": "Gold",
       "date_joined": "12/14/2022",
       "active": true
@@ -29,6 +31,7 @@
       "website": "https:/testweb.com",
       "email": "information@brainbox.com",
       "imagefile": "https://picsum.photos/id/327/120/100",
+      "tagline": "For all your auto services and repairs",
       "member_level": "Silver",
       "date_joined": "7/19/2022",
       "active": true
@@ -40,6 +43,7 @@
       "website": "https:/testweb.com",
       "email": "services@pleasantbuzz.com",
       "imagefile": "https://picsum.photos/id/365/120/100",
+      "tagline": "Don't settle for less!",
       "member_level": "NP",
       "date_joined": "9/22/2022",
       "active": true
@@ -51,6 +55,7 @@
       "website": "https:/testweb.com",
       "email": "support@jabberbean.com",
       "imagefile": "https://picsum.photos/id/225/120/100",
+      "tagline": "Delicious, fresh, and nourishing!",
       "member_level": "NP",
       "date_joined": "8/10/2022",
       "active": false
@@ -62,6 +67,7 @@
       "website": "https:/testweb.com",
       "email": "contact@msn.com",
       "imagefile": "https://picsum.photos/id/310/120/100",
+      "tagline": "we do them clean and fresh!",
       "member_level": "NP",
       "date_joined": "7/31/2022",
       "active": false
@@ -73,6 +79,7 @@
       "website": "https:/testweb.com",
       "email": "enquiries@yahoo.com",
       "imagefile": "https://picsum.photos/id/305/120/100",
+      "tagline": "Everywhere you go ...",
       "member_level": "Gold",
       "date_joined": "1/3/2023",
       "active": true
@@ -84,6 +91,7 @@
       "website": "https:/testweb.com",
       "email": "infodesk@dynava.com",
       "imagefile": "https://picsum.photos/id/292/120/100",
+      "tagline": "Double waffles for your troubles...",
       "member_level": "Silver",
       "date_joined": "8/22/2022",
       "active": false
@@ -95,6 +103,7 @@
       "website": "https:/testweb.com",
       "email": "customerservices@aol.com",
       "imagefile": "https://picsum.photos/id/248/120/100",
+      "tagline": "Big! Strong!! Resilient!!!",
       "member_level": "Silver",
       "date_joined": "7/10/2023",
       "active": true
@@ -106,6 +115,7 @@
       "website": "https:/testweb.com",
       "email": "gabtype@outlook.com",
       "imagefile": "https://picsum.photos/id/320/120/100",
+      "tagline": "Be yourself, naturally!",
       "member_level": "Bronze",
       "date_joined": "5/16/2023",
       "active": true
