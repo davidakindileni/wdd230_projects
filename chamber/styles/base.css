@@ -363,6 +363,7 @@ footer {
 
 #directory .card-text {
   text-align: center;
+  align-items: center;
   color: #011325;
 }
 
